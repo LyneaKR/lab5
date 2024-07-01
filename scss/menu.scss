@@ -1,0 +1,1171 @@
+@font-face {
+	font-family: 'Stolzl-Regular';
+	src: url('../fonts/stolzl-regular.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/stolzl-regular.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/stolzl-regular.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/stolzl-regular.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/stolzl-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/stolzl-regular.svg#stolzl-regular') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+
+.countainer {
+    max-width: 1920px;
+    margin: 0 auto;
+    width: 100%;
+	
+
+}
+
+body {
+	font-family: 'Stolzl-Regular';
+	background-color: #3A3F45;
+
+	
+}
+
+
+.best {
+    margin: 0 auto;
+    margin-top: 35px;
+    margin-bottom: 70px;
+    max-width: 1440px;
+    &__title {
+        font-weight: 500;
+        font-size: 33px;
+        color: #ddd9d9;
+        text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+        margin-bottom: 30px;
+    }
+
+    &__group {
+        border-radius: 40px;
+        height: 760px;
+        background: url(../public/best.png);
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        padding: 0 55px;
+        padding-bottom: 50px;
+      
+        &__left {
+            gap: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            width: 450px;
+
+            &__title {
+                font-weight: 400;
+                font-size: 30px;
+                text-align: center;
+                color: #ddd9d9;
+                text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+            }
+
+
+            &__text {
+                font-weight: 400;
+                font-size: 24px;
+                color: #ddd9d9;
+
+
+            }
+
+        }
+
+
+        &__sent {
+
+            font-weight: 400;
+            font-size: 39px;
+            text-align: center;
+            color: #ddd9d9;
+
+        }
+    }
+}
+
+
+.bluda {
+    max-width: 1440px;
+    margin: 0 auto;
+
+    &__group {
+        margin-bottom: 70px;
+
+
+        &__title {
+
+            font-weight: 400;
+            font-size: 29px;
+            color: #ddd9d9;
+            text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+            margin-bottom: 70px;
+        }
+
+
+        &__bluda {
+            display: flex;
+
+            flex-wrap: wrap;
+            gap: 70px 82px;
+
+            .bludo {    
+                background-color: #1d2024;
+                border-radius: 15px;
+                max-width: 424px;
+                height: 611px;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: space-between;
+
+
+
+                &__osn {   
+
+
+                    &__img {
+                        border-radius: 15px 15px 0 0;
+                        width: 100%;
+                        margin-bottom: 22px;
+           
+                    }
+    
+    
+                    &__text {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        margin-left: 15px;
+                        gap: 15px;
+                        width: 90%;
+
+                        &__title {
+                            font-weight: 400;
+                            font-size: 29px;
+                            text-align: center;
+                            color: #ddd9d9;
+                            text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    
+                        }
+    
+    
+                        &__info {
+                            font-weight: 400;
+                            font-size: 15px;
+                            color: #ddd9d9;
+    
+                        }
+    
+                    }
+
+                }
+                
+
+
+                &__sent {
+                    font-weight: 400;
+                    font-size: 29px;
+                    text-align: center;
+                    color: #ddd9d9;
+                    margin-left: 15px;
+                    margin-bottom: 22px;
+
+                }
+            }
+        }
+    }
+
+}
+
+
+
+@media screen and (min-width:1350px) and (max-width:1600px) {
+
+    .countainer {
+        max-width: 1600px;
+
+        
+    
+    }
+    
+    .best {
+        max-width: 1250px;
+
+        &__title {
+          
+        }
+    
+        &__group {
+           background-size: 100% 100%;
+          
+           height: 740px;
+          
+            &__left {
+            
+    
+                &__title {
+                 
+                }
+    
+    
+                &__text {
+                 
+    
+    
+                }
+    
+            }
+    
+    
+            &__sent {
+    
+              
+    
+            }
+        }
+    }
+    
+    
+    .bluda {
+        max-width: 1280px;
+    
+        &__group {
+        
+    
+            &__title {
+                margin-bottom: 60px;
+            }
+    
+    
+            &__bluda {
+                gap: 40px 31px;
+    
+                .bludo {    
+                    max-width: 405px;
+    
+    
+                    &__osn {   
+    
+    
+                        &__img {
+                          
+               
+                        }
+        
+        
+                        &__text {
+    
+    
+                            &__title {
+                          
+        
+                            }
+        
+        
+                            &__info {
+            
+        
+                            }
+        
+                        }
+    
+                    }
+                    
+    
+    
+                    &__sent {
+
+                    }
+                }
+            }
+        }
+    
+    }
+}
+
+@media screen and (min-width:1150px) and (max-width:1349px) {
+
+    .countainer {
+        max-width: 1349px;
+
+        
+    
+    }
+    
+    .best {
+        max-width: 1024px;
+
+        &__title {
+          
+        }
+    
+        &__group {
+            background-size: 100% 100%;
+            background: url(../public/best1150.png);
+            height: 660px;
+            padding: 0 35px;
+            padding-bottom: 50px;
+                
+            &__left {
+            
+    
+                &__title {
+                 
+                }
+    
+    
+                &__text {
+                 
+    
+    
+                }
+    
+            }
+    
+    
+            &__sent {
+                font-size: 36px;
+              
+    
+            }
+        }
+    }
+    
+    
+    .bluda {
+        max-width: 1024px;
+    
+        &__group {
+        
+    
+            &__title {
+                margin-bottom: 50px;
+            }
+    
+    
+            &__bluda {
+                gap: 40px 24px;
+    
+                .bludo {    
+                    max-width: 325px;
+                    height: 560px;
+    
+                    &__osn {   
+    
+    
+                        &__img {
+                          
+               
+                        }
+        
+        
+                        &__text {
+    
+    
+                            &__title {
+                                text-align: left;
+        
+                            }
+        
+        
+                            &__info {
+            
+        
+                            }
+        
+                        }
+    
+                    }
+                    
+    
+    
+                    &__sent {
+
+                    }
+                }
+            }
+        }
+    
+    }
+}
+
+@media screen and (min-width:1024px) and (max-width:1149px) {
+
+    .countainer {
+        max-width: 1149px;
+
+        
+    
+    }
+    
+    .best {
+        max-width: 925px;
+
+        &__title {
+            font-size: 27px;
+        }
+    
+        &__group {
+            background-size: 100% 100%;
+            background: url(../public/best1024.png);
+            height: 600px;
+            padding: 0 35px;
+            padding-bottom: 50px;
+                
+            &__left {
+                gap: 30px;
+    
+                &__title {
+                    font-size: 28px;
+                }
+    
+    
+                &__text {
+                 
+                    font-size: 23px;
+    
+                }
+    
+            }
+    
+    
+            &__sent {
+                font-size: 34px;
+              
+    
+            }
+        }
+    }
+    
+    
+    .bluda {
+        max-width: 925px;
+    
+        &__group {
+        
+    
+            &__title {
+                margin-bottom: 50px;
+                font-size: 27px;
+            }
+    
+    
+            &__bluda {
+                gap: 40px 19px;
+    
+                .bludo {    
+                    max-width: 295px;
+                    height: 513px;
+    
+                    &__osn {   
+    
+    
+                        &__img {
+                          
+               
+                        }
+        
+        
+                        &__text {
+    
+                            width: 255px;
+                            &__title {
+                                font-size: 25px;
+                                text-align: left;
+                            }
+        
+        
+                            &__info {
+            
+        
+                            }
+        
+                        }
+    
+                    }
+                    
+    
+    
+                    &__sent {
+                        font-size: 26px;
+                    }
+                }
+            }
+        }
+    
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+
+    .countainer {
+        max-width: 1023px;
+
+    }
+    
+    .best {
+        max-width: 685px;
+        &__title {
+            font-size: 25px;
+        }
+    
+        &__group {
+            background-size: 100% 100%;
+            background: url(../public/best768.png);
+            height: 420px;
+            padding: 0 35px;
+            padding-bottom: 50px;
+                
+            &__left {
+                gap: 20px;
+                width: 324px;
+
+                &__title {
+                    font-size: 25px;
+                }
+    
+    
+                &__text {
+                 
+                    font-size: 19px;
+    
+                }
+    
+            }
+    
+    
+            &__sent {
+                font-size: 28px;
+              
+    
+            }
+        }
+    }
+    
+    
+    .bluda {
+        max-width: 715px;
+    
+        &__group {
+        
+    
+            &__title {
+                margin-bottom: 50px;
+                font-size: 27px;
+            }
+    
+    
+            &__bluda {
+                gap: 30px 29px;
+    
+                .bludo {    
+                    max-width: 218px;
+                    height: 390px;
+      
+    
+                    &__osn {   
+    
+    
+                        &__img {
+                            width: 100%;
+                            margin-bottom: 17px;
+                        }
+        
+        
+                        &__text {
+                            margin-left: 12px;
+                            width: 200px;
+                            gap: 11px;
+
+                            &__title {
+                                font-size: 22px;
+                                text-align: left;
+                            }
+        
+        
+                            &__info {
+                                font-size: 13px;
+        
+                            }
+        
+                        }
+    
+                    }
+                    
+    
+    
+                    &__sent {
+                        font-size: 26px;
+                    }
+                }
+            }
+        }
+    
+    }
+}
+
+@media screen and (min-width:640px) and (max-width:767px) {
+
+    .countainer {
+        max-width: 767px;
+
+    }
+    
+    .best {
+        max-width: 585px;
+
+        &__title {
+            font-size: 24px;
+        }
+    
+        &__group {
+            background-size: 100% 100%;
+            background: url(../public/best640.png);
+            height: 405px;
+            padding: 0 35px;
+            padding-bottom: 28px;
+                
+            &__left {
+                gap: 20px;
+                width: 324px;
+                &__title {
+                    font-size: 24px;
+                }
+    
+    
+                &__text {
+                 
+                    font-size: 18px;
+    
+                }
+    
+            }
+    
+    
+            &__sent {
+                font-size: 28px;
+              
+    
+            }
+        }
+    }
+    
+    
+    .bluda {
+        max-width: 575px;
+    
+        &__group {
+            margin-bottom: 50px;
+    
+            &__title {
+                margin-bottom: 50px;
+                font-size: 25px;
+                
+            }
+    
+    
+            &__bluda {
+                gap: 25px 13px;
+    
+                .bludo {    
+                    max-width: 183px;
+                    height: 328px;
+      
+    
+                    &__osn {   
+    
+    
+                        &__img {
+                            width: 100%;
+                            margin-bottom: 5px;
+                        }
+        
+        
+                        &__text {
+                            margin-left: 12px;
+                            width: 150px;
+                            gap: 9px;
+                            &__title {
+                                font-size: 19px;
+                                text-align: left;
+                            }
+        
+        
+                            &__info {
+                                font-size: 12px;
+        
+                            }
+        
+                        }
+    
+                    }
+                    
+    
+    
+                    &__sent {
+                        font-size: 19px;
+                    }
+                }
+            }
+        }
+    
+    }
+}
+
+@media screen and (min-width:525px) and (max-width:639px) {
+
+    .countainer {
+        max-width: 639px;
+
+    }
+    
+    .best {
+        max-width: 490px;
+
+        &__title {
+            font-size: 21px;
+        }
+    
+        &__group {
+            background-size: 100% 100%;
+            background: url(../public/best525.png);
+            height: 355px;
+            padding: 0 25px;
+            padding-bottom: 28px;
+                
+            &__left {
+                gap: 20px;
+                width: 255px;
+
+                &__title {
+                    font-size: 22px;
+                }
+    
+    
+                &__text {
+                    font-size: 16px;
+    
+                }
+    
+            }
+    
+    
+            &__sent {
+                font-size: 23px;
+              
+    
+            }
+        }
+    }
+    
+    
+    .bluda {
+        max-width: 475px;
+    
+        &__group {
+            margin-bottom: 50px;
+    
+            &__title {
+                margin-bottom: 50px;
+                font-size: 25px;
+                
+            }
+    
+    
+            &__bluda {
+                gap: 25px 0px;
+                justify-content: space-between;
+                .bludo {    
+                    max-width: 215px;
+                    height: 355px;
+      
+    
+                    &__osn {   
+    
+    
+                        &__img {
+                            width: 100%;
+                            margin-bottom: 9px;
+                        }
+        
+        
+                        &__text {
+                            margin-left: 12px;
+                            width: 185px;
+                            gap: 10px;
+                            &__title {
+                                font-size: 20px;
+                                text-align: left;
+                            }
+        
+        
+                            &__info {
+                                font-size: 12px;
+        
+                            }
+        
+                        }
+    
+                    }
+                    
+    
+    
+                    &__sent {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    
+    }
+}
+
+@media screen and (min-width:467px) and (max-width:524px) {
+
+    .countainer {
+        max-width: 524px;
+
+    }
+    
+    .best {
+        max-width: 435px;
+        margin-top: 0px;
+
+        &__title {
+            font-size: 21px;
+            margin-bottom: 28px;
+        }
+    
+        &__group {
+            background-size: 100% 100%;
+            background: url(../public/best467.png);
+            height: 305px;
+            padding: 0 25px;
+            padding-bottom: 28px;
+            border-radius: 20px;
+            &__left {
+                gap: 20px;
+                width: 255px;
+
+                &__title {
+                    font-size: 19px;
+                }
+    
+    
+                &__text {
+                    font-size: 13px;
+    
+                }
+    
+            }
+    
+    
+            &__sent {
+                font-size: 20px;
+              
+    
+            }
+        }
+    }
+    
+    
+    .bluda {
+        max-width: 435px;
+    
+        &__group {
+            margin-bottom: 50px;
+    
+            &__title {
+                margin-bottom: 40px;
+                font-size: 25px;
+                
+            }
+    
+    
+            &__bluda {
+                gap: 25px 0px;
+                justify-content: space-between;
+
+                .bludo {    
+                    max-width: 211px;
+                    height: 351px;
+      
+    
+                    &__osn {   
+    
+    
+                        &__img {
+                            width: 100%;
+                            margin-bottom: 8px;
+                        }
+        
+        
+                        &__text {
+                            margin-left: 12px;
+                            width: 185px;
+                            gap: 7px;
+                            &__title {
+                                font-size: 20px;
+                                text-align: left;
+                            }
+        
+        
+                            &__info {
+                                font-size: 13px;
+        
+                            }
+        
+                        }
+    
+                    }
+                    
+    
+    
+                    &__sent {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    
+    }
+}
+
+@media screen and (min-width:390px) and (max-width:466px) {
+
+    .countainer {
+        max-width: 466px;
+
+    }
+    
+    .best {
+        max-width: 365px;
+        margin-top: 0px;
+        margin-bottom: 65px;
+
+        &__title {
+            font-size: 21px;
+            margin-bottom: 28px;
+        }
+    
+        &__group {
+            background-size: 100% 100%;
+            
+            height: 270px;
+            padding: 0 20px;
+            background: url(../public/best390.png);
+            padding-bottom: 23px;
+            border-radius: 25px;
+                
+            &__left {
+                gap: 20px;
+                width: 255px;
+
+                &__title {
+                    font-size: 17px;
+                }
+    
+    
+                &__text {
+                    font-size: 13px;
+    
+                }
+    
+            }
+    
+    
+            &__sent {
+                font-size: 19px;
+              
+    
+            }
+        }
+    }
+    
+    
+    .bluda {
+        max-width: 355px;
+        &__group {
+            margin-bottom: 40px;
+    
+            &__title {
+                margin-bottom: 40px;
+                font-size: 25px;
+                
+            }
+    
+    
+            &__bluda {
+                gap: 25px 0px;
+                justify-content: space-between;
+                .bludo {    
+                    max-width: 171px;
+                    height: 319px;
+      
+    
+                    &__osn {   
+                        gap: 12px;
+    
+                        &__img {
+                            width: 100%;
+                            margin-bottom: 2px;
+                        }
+        
+        
+                        &__text {
+                            margin-left: 12px;
+                            width: 140px;
+               
+                            gap: 5px;
+
+                            &__title {
+                                font-size: 18px;
+                                text-align: left;
+                            }
+        
+        
+                            &__info {
+                                font-size: 12px;
+        
+                            }
+        
+                        }
+    
+                    }
+                    
+    
+    
+                    &__sent {
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    
+    }
+}
+
+@media screen and (min-width:320px) and (max-width:389px) {
+
+    .countainer {
+        max-width: 389px;
+
+    }
+    
+    .best {
+        max-width: 300px;
+        margin-top: 0px;
+        margin-bottom: 65px;
+
+        &__title {
+            font-size: 18px;
+            margin-bottom: 28px;
+        }
+    
+        &__group {
+            background-size: 100% 100%;
+            height: 210px;
+            background: url(../public/best320.png);
+            padding: 0 14px;
+            padding-bottom: 19px;
+            border-radius: 25px;
+                
+            &__left {
+                gap: 10px;
+                width: 169px;
+
+                &__title {
+                    font-size: 13px;
+                }
+    
+    
+                &__text {
+                    font-size: 10px;
+    
+                }
+    
+            }
+    
+    
+            &__sent {
+                font-size: 15px;
+              
+    
+            }
+        }
+    }
+    
+    
+    .bluda {
+        max-width: 300px;
+
+        &__group {
+            margin-bottom: 40px;
+    
+            &__title {
+                margin-bottom: 25px;
+                font-size: 20px;
+                
+            }
+    
+    
+            &__bluda {
+                gap: 15px 0px;
+                justify-content: space-between;
+                .bludo {    
+                    max-width: 145px;
+                    height: 285px;
+      
+    
+                    &__osn {   
+                        gap: 12px;
+    
+                        &__img {
+                            width: 100%;
+                            margin-bottom: 3px;
+                        }
+        
+        
+                        &__text {
+                            margin-left: 10px;
+                            width: 126px;
+                            gap: 6px;
+
+                            &__title {
+                                font-size: 16px;
+                                text-align: left;
+                            }
+        
+        
+                            &__info {
+                                font-size: 11px;
+        
+                            }
+        
+                        }
+    
+                    }
+                    
+    
+    
+                    &__sent {
+                        font-size: 15px;
+                        margin-bottom: 17px;
+                    }
+                }
+            }
+        }
+    
+    }
+}

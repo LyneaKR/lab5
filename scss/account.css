@@ -1,0 +1,1234 @@
+@font-face {
+  font-family: "Stolzl-Regular";
+  src: url("../fonts/stolzl-regular.eot"); /* IE 9 Compatibility Mode */
+  src: url("../fonts/stolzl-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/stolzl-regular.woff2") format("woff2"), url("../fonts/stolzl-regular.woff") format("woff"), url("../fonts/stolzl-regular.ttf") format("truetype"), url("../fonts/stolzl-regular.svg#stolzl-regular") format("svg"); /* Chrome < 4, Legacy iOS */
+}
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.countainer {
+  max-width: 1920px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+body {
+  font-family: "Stolzl-Regular";
+  background-color: #3A3F45;
+}
+
+.account {
+  max-width: 1440px;
+  margin: 55px auto;
+}
+.account__items {
+  display: flex;
+  justify-content: space-between;
+}
+.account__items__left__profil .profil {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%;
+  background-color: #646a73;
+  width: 703px;
+  height: 69px;
+  border-radius: 20px;
+}
+.account__items__left__profil .profil__name {
+  font-weight: 400;
+  font-size: 24px;
+  color: #ddd9d9;
+}
+.account__items__left__profil .profil__id {
+  font-weight: 400;
+  font-size: 24px;
+  color: #ddd9d9;
+}
+.account__items__left__profil .redakt {
+  display: flex;
+  gap: 0 30px;
+  margin: 35px 0;
+}
+.account__items__left__profil .redakt .button {
+  padding: 19px 0px;
+}
+.account__items__left__profil .redakt .button .btn {
+  font-weight: 400;
+  font-size: 23px;
+  letter-spacing: 0.05em;
+  color: #fff;
+  text-decoration: none;
+  padding: 19px 40px;
+  background: rgba(244, 67, 54, 0.22);
+  border: 4px solid #f44336;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.account__items__left__broni {
+  margin-top: 90px;
+}
+.account__items__left__broni__text {
+  margin-bottom: 35px;
+  font-weight: 400;
+  font-size: 24px;
+  color: #ddd9d9;
+  background: #646a73;
+  width: 211px;
+  padding: 0px 50px;
+  padding-top: 18px;
+  padding-bottom: 22px;
+  border-radius: 20px;
+}
+.account__items__left__broni__activ {
+  display: flex;
+  align-items: center;
+  gap: 0px 20px;
+  margin-bottom: 20px;
+}
+.account__items__left__broni__activ .info {
+  display: flex;
+  justify-content: space-between;
+  gap: 0 53px;
+  padding: 25px 40px;
+  border: 4px solid #f44336;
+  border-radius: 20px;
+}
+.account__items__left__broni__activ .info__people {
+  font-weight: 500;
+  font-size: 23px;
+  letter-spacing: 0.05em;
+  color: #fff;
+}
+.account__items__left__broni__activ .info__date {
+  font-weight: 500;
+  font-size: 23px;
+  letter-spacing: 0.05em;
+  color: #fff;
+}
+.account__items__left__broni__activ .info__time {
+  font-weight: 500;
+  font-size: 23px;
+  letter-spacing: 0.05em;
+  color: #fff;
+}
+.account__items__left__broni__activ .infoimg {
+  width: 49px;
+  height: 49px;
+}
+.account__items__left__broni__activ:last-child {
+  margin-bottom: 0px;
+}
+.account__items__right {
+  display: flex;
+  flex-direction: column;
+  gap: 40px 0;
+}
+.account__items__right__top {
+  border-radius: 40px;
+  background-color: #646a73;
+  width: 505px;
+  height: 522px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.account__items__right__top__text {
+  padding-top: 50px;
+  gap: 25px 0px;
+  padding-left: 60px;
+  display: flex;
+  flex-direction: column;
+}
+.account__items__right__top__text__title {
+  font-weight: 400;
+  font-size: 43px;
+  color: #ddd9d9;
+}
+.account__items__right__top__text__title .red {
+  color: #f44336;
+}
+.account__items__right__top__text__title .row {
+  color: #d4392e;
+}
+.account__items__right__top__text__info {
+  font-weight: 400;
+  font-size: 24px;
+  color: #efefef;
+  width: 310px;
+}
+.account__items__right__top__img {
+  margin: 0 auto;
+  width: 160.5px;
+  height: 169px;
+  padding-bottom: 55px;
+}
+.account__items__right__bottom {
+  display: flex;
+  justify-content: space-between;
+  background-color: #646a73;
+  border-radius: 40px;
+  padding: 40px 43px;
+}
+.account__items__right__bottom__text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px 0px;
+}
+.account__items__right__bottom__text__title {
+  font-weight: 400;
+  font-size: 43px;
+  color: #ddd9d9;
+}
+.account__items__right__bottom__text__title .red {
+  color: #f44336;
+}
+.account__items__right__bottom__text__title .row {
+  color: #d4392e;
+}
+.account__items__right__bottom__text__info {
+  font-weight: 400;
+  font-size: 24px;
+  color: #efefef;
+  width: 255px;
+}
+.account__items__right__bottom__img {
+  width: 115px;
+  height: 138px;
+}
+.account .modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.account .modal__content {
+  background-color: #646a73;
+  border-radius: 20px;
+  margin: 15% auto;
+  padding: 40px;
+  border: 1px solid #888;
+  width: 30%;
+}
+.account .modal__title {
+  font-weight: 500;
+  font-size: 29px;
+  color: #ddd9d9;
+  margin-bottom: 25px;
+}
+.account .modal .fomik {
+  display: flex;
+  flex-direction: column;
+  gap: 30px 0px;
+}
+.account .modal .fomik__pole {
+  padding: 25px 0px;
+  padding-left: 15px;
+  font-weight: 400;
+  font-size: 24px;
+  color: #efefef;
+  background-color: #8b919a;
+  border-radius: 20px;
+}
+.account .modal .fomik__poler {
+  padding: 25px 0px;
+  padding-left: 15px;
+  font-weight: 400;
+  font-size: 24px;
+  color: #efefef;
+  background-color: #8b919a;
+  border-radius: 20px;
+}
+.account .modal .fomik__btn {
+  margin-top: 10px;
+  font-weight: 500;
+  font-size: 28px;
+  letter-spacing: 0.05em;
+  color: #fff;
+  background: #f44336;
+  border-radius: 20px;
+  height: 78px;
+}
+.account .modal .fomik__btn:hover {
+  transform: scale(1.02);
+  transition: 0.3s;
+}
+
+@media screen and (min-width: 1350px) and (max-width: 1600px) {
+  .countainer {
+    max-width: 1600px;
+  }
+  .account {
+    max-width: 1280px;
+  }
+  .account__items__left__profil .profil {
+    width: 613px;
+  }
+  .account__items__right__top__text {
+    padding-left: 50px;
+  }
+}
+@media screen and (min-width: 1150px) and (max-width: 1349px) {
+  .countainer {
+    max-width: 1349px;
+  }
+  .account {
+    max-width: 1024px;
+  }
+  .account__items__left__profil .profil {
+    width: 506px;
+  }
+  .account__items__left__profil .redakt {
+    gap: 0 25px;
+  }
+  .account__items__left__profil .redakt .button {
+    padding: 17px 0px;
+  }
+  .account__items__left__profil .redakt .button .btn {
+    font-size: 22px;
+    padding: 17px 35px;
+  }
+  .account__items__left__broni__text {
+    padding-bottom: 20px;
+  }
+  .account__items__left__broni__activ .info {
+    padding: 20px 40px;
+  }
+  .account__items__right__top {
+    width: 420px;
+  }
+  .account__items__right__top__text {
+    padding-left: 45px;
+  }
+  .account__items__right__bottom {
+    padding: 35px 25px;
+  }
+  .account__items__right__bottom__text__title {
+    font-size: 41px;
+  }
+  .account__items__right__bottom__text__info {
+    font-size: 22px;
+    width: 238px;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1149px) {
+  .countainer {
+    max-width: 1149px;
+  }
+  .account {
+    max-width: 920px;
+  }
+  .account__items__left__profil .profil {
+    width: 453px;
+  }
+  .account__items__left__profil .profil__name {
+    font-size: 22px;
+  }
+  .account__items__left__profil .profil__id {
+    font-size: 22px;
+  }
+  .account__items__left__profil .redakt {
+    gap: 0 20px;
+  }
+  .account__items__left__profil .redakt .button {
+    padding: 17px 0px;
+  }
+  .account__items__left__profil .redakt .button .btn {
+    font-size: 22px;
+    padding: 17px 32px;
+  }
+  .account__items__left__broni__text {
+    padding: 0px 30px;
+    padding-top: 18px;
+    padding-bottom: 20px;
+  }
+  .account__items__left__broni__activ {
+    gap: 0px 15px;
+  }
+  .account__items__left__broni__activ .info {
+    padding: 20px 40px;
+    gap: 0 40px;
+  }
+  .account__items__right__top {
+    width: 360px;
+    height: 460px;
+    border-radius: 30px;
+  }
+  .account__items__right__top__text {
+    padding-left: 30px;
+    padding-top: 20px;
+  }
+  .account__items__right__top__text__title {
+    font-size: 39px;
+  }
+  .account__items__right__top__text__info {
+    font-size: 22px;
+  }
+  .account__items__right__top__img {
+    width: 154.5px;
+    height: 163px;
+    padding-bottom: 30px;
+  }
+  .account__items__right__bottom {
+    align-items: center;
+    border-radius: 30px;
+    padding: 35px 25px;
+  }
+  .account__items__right__bottom__text__title {
+    font-size: 40px;
+  }
+  .account__items__right__bottom__text__info {
+    font-size: 22px;
+    width: 192px;
+  }
+  .account__items__right__bottom__img {
+    width: 105px;
+    height: 128px;
+  }
+  .account .modal__title {
+    font-size: 25px;
+  }
+  .account .modal .fomik__pole {
+    padding: 20px 0px;
+    padding-left: 15px;
+  }
+  .account .modal .fomik__poler {
+    padding: 20px 0px;
+    padding-left: 15px;
+  }
+  .account .modal .fomik__btn {
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .countainer {
+    max-width: 1023px;
+  }
+  .account {
+    max-width: 695px;
+  }
+  .account__items {
+    flex-direction: column;
+  }
+  .account__items__left__profil .profil {
+    width: 453px;
+  }
+  .account__items__left__profil .profil__name {
+    font-size: 22px;
+  }
+  .account__items__left__profil .profil__id {
+    font-size: 22px;
+  }
+  .account__items__left__profil .redakt {
+    gap: 0 20px;
+  }
+  .account__items__left__profil .redakt .button {
+    padding: 17px 0px;
+  }
+  .account__items__left__profil .redakt .button .btn {
+    font-size: 22px;
+    padding: 17px 32px;
+  }
+  .account__items__left__broni {
+    margin-top: 55px;
+  }
+  .account__items__left__broni__text {
+    padding: 0px 30px;
+    padding-top: 18px;
+    padding-bottom: 20px;
+  }
+  .account__items__left__broni__activ {
+    gap: 0px 15px;
+  }
+  .account__items__left__broni__activ .info {
+    padding: 20px 40px;
+    gap: 0 40px;
+  }
+  .account__items__right {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-top: 50px;
+  }
+  .account__items__right__top {
+    width: 360px;
+    height: 425px;
+    border-radius: 30px;
+  }
+  .account__items__right__top__text {
+    padding-left: 30px;
+    padding-top: 20px;
+  }
+  .account__items__right__top__text__title {
+    font-size: 39px;
+  }
+  .account__items__right__top__text__info {
+    font-size: 22px;
+  }
+  .account__items__right__top__img {
+    width: 154.5px;
+    height: 163px;
+    padding-bottom: 30px;
+  }
+  .account__items__right__bottom {
+    align-items: center;
+    border-radius: 30px;
+    padding: 20px 30px;
+    flex-direction: column;
+  }
+  .account__items__right__bottom__text {
+    gap: 25px 0px;
+  }
+  .account__items__right__bottom__text__title {
+    font-size: 40px;
+  }
+  .account__items__right__bottom__text__info {
+    font-size: 22px;
+    width: 245px;
+  }
+  .account__items__right__bottom__img {
+    width: 143px;
+    height: 176px;
+  }
+  .account .modal__content {
+    width: 40%;
+  }
+  .account .modal__title {
+    font-size: 25px;
+  }
+  .account .modal .fomik__pole {
+    padding: 20px 0px;
+    padding-left: 15px;
+    font-size: 21px;
+  }
+  .account .modal .fomik__poler {
+    padding: 20px 0px;
+    padding-left: 15px;
+    font-size: 21px;
+  }
+  .account .modal .fomik__btn {
+    font-size: 21px;
+  }
+}
+@media screen and (min-width: 640px) and (max-width: 767px) {
+  .countainer {
+    max-width: 767px;
+  }
+  .account {
+    max-width: 585px;
+  }
+  .account__items {
+    flex-direction: column;
+  }
+  .account__items__left__profil .profil {
+    width: 453px;
+  }
+  .account__items__left__profil .profil__name {
+    font-size: 22px;
+  }
+  .account__items__left__profil .profil__id {
+    font-size: 22px;
+  }
+  .account__items__left__profil .redakt {
+    gap: 0 15px;
+  }
+  .account__items__left__profil .redakt .button {
+    padding: 17px 0px;
+  }
+  .account__items__left__profil .redakt .button .btn {
+    border: 3px solid #f44336;
+    font-size: 20px;
+    padding: 17px 32px;
+  }
+  .account__items__left__broni {
+    margin-top: 55px;
+  }
+  .account__items__left__broni__text {
+    padding: 0px 30px;
+    padding-top: 18px;
+    padding-bottom: 20px;
+    font-size: 22px;
+    width: 198px;
+    margin-bottom: 30px;
+  }
+  .account__items__left__broni__activ {
+    gap: 0px 15px;
+  }
+  .account__items__left__broni__activ .info {
+    padding: 20px 25px;
+    gap: 0 25px;
+  }
+  .account__items__left__broni__activ .info__people {
+    font-size: 21px;
+  }
+  .account__items__left__broni__activ .info__date {
+    font-size: 21px;
+  }
+  .account__items__left__broni__activ .info__time {
+    font-size: 21px;
+  }
+  .account__items__left__broni__activ .infoimg {
+    width: 42px;
+    height: 42px;
+  }
+  .account__items__right {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-top: 50px;
+  }
+  .account__items__right__top {
+    width: 280px;
+    height: 350px;
+    border-radius: 30px;
+  }
+  .account__items__right__top__text {
+    padding-left: 20px;
+    padding-top: 20px;
+  }
+  .account__items__right__top__text__title {
+    font-size: 35px;
+  }
+  .account__items__right__top__text__info {
+    font-size: 17px;
+    width: 237px;
+  }
+  .account__items__right__top__img {
+    width: 125.5px;
+    height: 135px;
+    padding-bottom: 30px;
+  }
+  .account__items__right__bottom {
+    align-items: center;
+    border-radius: 30px;
+    padding: 20px 20px;
+    flex-direction: column;
+  }
+  .account__items__right__bottom__text {
+    gap: 25px 0px;
+  }
+  .account__items__right__bottom__text__title {
+    font-size: 35px;
+  }
+  .account__items__right__bottom__text__info {
+    font-size: 18px;
+    width: 245px;
+  }
+  .account__items__right__bottom__img {
+    width: 113px;
+    height: 146px;
+  }
+  .account .modal__content {
+    width: 40%;
+  }
+  .account .modal__title {
+    font-size: 23px;
+  }
+  .account .modal .fomik {
+    gap: 20px 0px;
+  }
+  .account .modal .fomik__pole {
+    padding: 20px 0px;
+    padding-left: 15px;
+    font-size: 21px;
+  }
+  .account .modal .fomik__poler {
+    padding: 20px 0px;
+    padding-left: 15px;
+    font-size: 21px;
+  }
+  .account .modal .fomik__btn {
+    font-size: 21px;
+    height: 61px;
+  }
+}
+@media screen and (min-width: 525px) and (max-width: 639px) {
+  .countainer {
+    max-width: 639px;
+  }
+  .account {
+    max-width: 475px;
+    margin: 70px auto;
+    margin-bottom: 170px;
+  }
+  .account__items {
+    flex-direction: column;
+  }
+  .account__items__left__profil .profil {
+    width: 400px;
+    height: 63px;
+  }
+  .account__items__left__profil .profil__name {
+    font-size: 20px;
+  }
+  .account__items__left__profil .profil__id {
+    font-size: 20px;
+  }
+  .account__items__left__profil .redakt {
+    gap: 0 15px;
+  }
+  .account__items__left__profil .redakt .button {
+    padding: 17px 0px;
+  }
+  .account__items__left__profil .redakt .button .btn {
+    border: 3px solid #f44336;
+    font-size: 18px;
+    padding: 17px 20px;
+  }
+  .account__items__left__broni {
+    margin-top: 55px;
+    border-radius: 15px;
+  }
+  .account__items__left__broni__text {
+    padding: 0px 20px;
+    padding-top: 18px;
+    padding-bottom: 20px;
+    font-size: 20px;
+    width: 178px;
+    margin-bottom: 30px;
+  }
+  .account__items__left__broni__activ {
+    gap: 0px 15px;
+  }
+  .account__items__left__broni__activ .info {
+    padding: 15px 20px;
+    gap: 0 20px;
+    border: 3px solid #f44336;
+    border-radius: 15px;
+  }
+  .account__items__left__broni__activ .info__people {
+    font-size: 18px;
+  }
+  .account__items__left__broni__activ .info__date {
+    font-size: 18px;
+  }
+  .account__items__left__broni__activ .info__time {
+    font-size: 18px;
+  }
+  .account__items__left__broni__activ .infoimg {
+    width: 36px;
+    height: 36px;
+  }
+  .account__items__right {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-top: 50px;
+    display: none;
+  }
+  .account__items__right__top {
+    width: 280px;
+    height: 350px;
+    border-radius: 30px;
+  }
+  .account__items__right__top__text {
+    padding-left: 20px;
+    padding-top: 20px;
+  }
+  .account__items__right__top__text__title {
+    font-size: 35px;
+  }
+  .account__items__right__top__text__info {
+    font-size: 17px;
+    width: 237px;
+  }
+  .account__items__right__top__img {
+    width: 125.5px;
+    height: 135px;
+    padding-bottom: 30px;
+  }
+  .account__items__right__bottom {
+    align-items: center;
+    border-radius: 30px;
+    padding: 20px 20px;
+    flex-direction: column;
+  }
+  .account__items__right__bottom__text {
+    gap: 25px 0px;
+  }
+  .account__items__right__bottom__text__title {
+    font-size: 35px;
+  }
+  .account__items__right__bottom__text__info {
+    font-size: 18px;
+    width: 245px;
+  }
+  .account__items__right__bottom__img {
+    width: 113px;
+    height: 146px;
+  }
+  .account .modal__content {
+    width: 50%;
+    padding: 30px;
+  }
+  .account .modal__title {
+    font-size: 23px;
+  }
+  .account .modal .fomik {
+    gap: 20px 0px;
+  }
+  .account .modal .fomik__pole {
+    padding: 20px 0px;
+    padding-left: 12px;
+    font-size: 18px;
+  }
+  .account .modal .fomik__poler {
+    padding: 20px 0px;
+    padding-left: 12px;
+    font-size: 18px;
+  }
+  .account .modal .fomik__btn {
+    font-size: 21px;
+    height: 61px;
+  }
+}
+@media screen and (min-width: 467px) and (max-width: 524px) {
+  .countainer {
+    max-width: 524px;
+  }
+  .account {
+    max-width: 425px;
+    margin: 70px auto;
+    margin-bottom: 360px;
+  }
+  .account__items {
+    flex-direction: column;
+  }
+  .account__items__left__profil .profil {
+    width: 350px;
+    height: 60px;
+  }
+  .account__items__left__profil .profil__name {
+    font-size: 18px;
+  }
+  .account__items__left__profil .profil__id {
+    font-size: 18px;
+  }
+  .account__items__left__profil .redakt {
+    gap: 0 15px;
+    margin: 30px 0;
+  }
+  .account__items__left__profil .redakt .button {
+    padding: 13px 0px;
+  }
+  .account__items__left__profil .redakt .button .btn {
+    border: 3px solid #f44336;
+    font-size: 15px;
+    padding: 13px 15px;
+    border-radius: 14px;
+  }
+  .account__items__left__broni {
+    margin-top: 55px;
+    border-radius: 15px;
+  }
+  .account__items__left__broni__text {
+    padding: 0px 14px;
+    padding-top: 16px;
+    padding-bottom: 15px;
+    font-size: 18px;
+    width: 159px;
+    margin-bottom: 25px;
+    border-radius: 15px;
+  }
+  .account__items__left__broni__activ {
+    gap: 0px 15px;
+    margin-bottom: 15px;
+  }
+  .account__items__left__broni__activ .info {
+    padding: 15px 20px;
+    gap: 0 20px;
+    border: 3px solid #f44336;
+    border-radius: 15px;
+  }
+  .account__items__left__broni__activ .info__people {
+    font-size: 17px;
+  }
+  .account__items__left__broni__activ .info__date {
+    font-size: 17px;
+  }
+  .account__items__left__broni__activ .info__time {
+    font-size: 17px;
+  }
+  .account__items__left__broni__activ .infoimg {
+    width: 36px;
+    height: 36px;
+  }
+  .account__items__right {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-top: 50px;
+    display: none;
+  }
+  .account__items__right__top {
+    width: 280px;
+    height: 350px;
+    border-radius: 30px;
+  }
+  .account__items__right__top__text {
+    padding-left: 20px;
+    padding-top: 20px;
+  }
+  .account__items__right__top__text__title {
+    font-size: 35px;
+  }
+  .account__items__right__top__text__info {
+    font-size: 17px;
+    width: 237px;
+  }
+  .account__items__right__top__img {
+    width: 125.5px;
+    height: 135px;
+    padding-bottom: 30px;
+  }
+  .account__items__right__bottom {
+    align-items: center;
+    border-radius: 30px;
+    padding: 20px 20px;
+    flex-direction: column;
+  }
+  .account__items__right__bottom__text {
+    gap: 25px 0px;
+  }
+  .account__items__right__bottom__text__title {
+    font-size: 35px;
+  }
+  .account__items__right__bottom__text__info {
+    font-size: 18px;
+    width: 245px;
+  }
+  .account__items__right__bottom__img {
+    width: 113px;
+    height: 146px;
+  }
+  .account .modal__content {
+    width: 56%;
+    padding: 25px;
+  }
+  .account .modal__title {
+    font-size: 23px;
+  }
+  .account .modal .fomik {
+    gap: 20px 0px;
+  }
+  .account .modal .fomik__pole {
+    padding: 20px 0px;
+    padding-left: 12px;
+    font-size: 16px;
+  }
+  .account .modal .fomik__poler {
+    padding: 20px 0px;
+    padding-left: 12px;
+    font-size: 16px;
+  }
+  .account .modal .fomik__btn {
+    font-size: 18px;
+    height: 55px;
+  }
+}
+@media screen and (min-width: 390px) and (max-width: 466px) {
+  .countainer {
+    max-width: 466px;
+  }
+  .account {
+    max-width: 340px;
+    margin: 70px auto;
+    margin-bottom: 360px;
+  }
+  .account__items {
+    flex-direction: column;
+  }
+  .account__items__left__profil .profil {
+    width: 300px;
+    height: 58px;
+    border-radius: 15px;
+    padding: 0 4%;
+  }
+  .account__items__left__profil .profil__name {
+    font-size: 16px;
+  }
+  .account__items__left__profil .profil__id {
+    font-size: 16px;
+  }
+  .account__items__left__profil .redakt {
+    gap: 0 10px;
+    margin: 30px 0;
+  }
+  .account__items__left__profil .redakt .button {
+    padding: 13px 0px;
+  }
+  .account__items__left__profil .redakt .button .btn {
+    border: 2px solid #f44336;
+    font-size: 15px;
+    padding: 13px 15px;
+    border-radius: 14px;
+  }
+  .account__items__left__broni {
+    margin-top: 55px;
+    border-radius: 15px;
+  }
+  .account__items__left__broni__text {
+    padding: 0px 14px;
+    padding-top: 14px;
+    padding-bottom: 13px;
+    font-size: 16px;
+    width: 144px;
+    margin-bottom: 25px;
+    border-radius: 15px;
+  }
+  .account__items__left__broni__activ {
+    gap: 0px 15px;
+    margin-bottom: 10px;
+  }
+  .account__items__left__broni__activ .info {
+    padding: 15px 15px;
+    gap: 0 15px;
+    border: 2px solid #f44336;
+    border-radius: 15px;
+  }
+  .account__items__left__broni__activ .info__people {
+    font-size: 15px;
+  }
+  .account__items__left__broni__activ .info__date {
+    font-size: 15px;
+  }
+  .account__items__left__broni__activ .info__time {
+    font-size: 15px;
+  }
+  .account__items__left__broni__activ .infoimg {
+    width: 30px;
+    height: 30px;
+  }
+  .account__items__right {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-top: 50px;
+    display: none;
+  }
+  .account__items__right__top {
+    width: 280px;
+    height: 350px;
+    border-radius: 30px;
+  }
+  .account__items__right__top__text {
+    padding-left: 20px;
+    padding-top: 20px;
+  }
+  .account__items__right__top__text__title {
+    font-size: 35px;
+  }
+  .account__items__right__top__text__info {
+    font-size: 17px;
+    width: 237px;
+  }
+  .account__items__right__top__img {
+    width: 125.5px;
+    height: 135px;
+    padding-bottom: 30px;
+  }
+  .account__items__right__bottom {
+    align-items: center;
+    border-radius: 30px;
+    padding: 20px 20px;
+    flex-direction: column;
+  }
+  .account__items__right__bottom__text {
+    gap: 25px 0px;
+  }
+  .account__items__right__bottom__text__title {
+    font-size: 35px;
+  }
+  .account__items__right__bottom__text__info {
+    font-size: 18px;
+    width: 245px;
+  }
+  .account__items__right__bottom__img {
+    width: 113px;
+    height: 146px;
+  }
+  .account .modal__content {
+    width: 60%;
+    padding: 25px;
+    margin: 27% auto;
+  }
+  .account .modal__title {
+    font-size: 21px;
+  }
+  .account .modal .fomik {
+    gap: 20px 0px;
+  }
+  .account .modal .fomik__pole {
+    padding: 20px 0px;
+    padding-left: 12px;
+    font-size: 16px;
+    border-radius: 15px;
+  }
+  .account .modal .fomik__poler {
+    padding: 20px 0px;
+    padding-left: 12px;
+    font-size: 16px;
+    border-radius: 15px;
+  }
+  .account .modal .fomik__btn {
+    font-size: 18px;
+    height: 55px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 389px) {
+  .countainer {
+    max-width: 389px;
+  }
+  .account {
+    max-width: 290px;
+    margin: 50px auto;
+    margin-bottom: 120px;
+  }
+  .account__items {
+    flex-direction: column;
+  }
+  .account__items__left__profil .profil {
+    width: 265px;
+    height: 50px;
+    border-radius: 15px;
+    padding: 0 4%;
+  }
+  .account__items__left__profil .profil__name {
+    font-size: 15px;
+  }
+  .account__items__left__profil .profil__id {
+    font-size: 15px;
+  }
+  .account__items__left__profil .redakt {
+    gap: 0 10px;
+    margin: 20px 0;
+  }
+  .account__items__left__profil .redakt .button {
+    padding: 13px 0px;
+  }
+  .account__items__left__profil .redakt .button .btn {
+    border: 2px solid #f44336;
+    font-size: 13px;
+    padding: 13px 15px;
+    border-radius: 14px;
+  }
+  .account__items__left__broni {
+    margin-top: 55px;
+    border-radius: 15px;
+  }
+  .account__items__left__broni__text {
+    padding: 0px 14px;
+    padding-top: 14px;
+    padding-bottom: 13px;
+    font-size: 16px;
+    width: 144px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+  }
+  .account__items__left__broni__activ {
+    gap: 0px 10px;
+    margin-bottom: 10px;
+  }
+  .account__items__left__broni__activ .info {
+    padding: 15px 15px;
+    gap: 0 15px;
+    border: 2px solid #f44336;
+    border-radius: 15px;
+  }
+  .account__items__left__broni__activ .info__people {
+    font-size: 13px;
+  }
+  .account__items__left__broni__activ .info__date {
+    font-size: 13px;
+  }
+  .account__items__left__broni__activ .info__time {
+    font-size: 13px;
+  }
+  .account__items__left__broni__activ .infoimg {
+    width: 30px;
+    height: 30px;
+  }
+  .account__items__right {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-top: 50px;
+    display: none;
+  }
+  .account__items__right__top {
+    width: 280px;
+    height: 350px;
+    border-radius: 30px;
+  }
+  .account__items__right__top__text {
+    padding-left: 20px;
+    padding-top: 20px;
+  }
+  .account__items__right__top__text__title {
+    font-size: 35px;
+  }
+  .account__items__right__top__text__info {
+    font-size: 17px;
+    width: 237px;
+  }
+  .account__items__right__top__img {
+    width: 125.5px;
+    height: 135px;
+    padding-bottom: 30px;
+  }
+  .account__items__right__bottom {
+    align-items: center;
+    border-radius: 30px;
+    padding: 20px 20px;
+    flex-direction: column;
+  }
+  .account__items__right__bottom__text {
+    gap: 25px 0px;
+  }
+  .account__items__right__bottom__text__title {
+    font-size: 35px;
+  }
+  .account__items__right__bottom__text__info {
+    font-size: 18px;
+    width: 245px;
+  }
+  .account__items__right__bottom__img {
+    width: 113px;
+    height: 146px;
+  }
+  .account .modal__content {
+    width: 60%;
+    padding: 25px;
+    margin: 27% auto;
+  }
+  .account .modal__title {
+    font-size: 21px;
+  }
+  .account .modal .fomik {
+    gap: 20px 0px;
+  }
+  .account .modal .fomik__pole {
+    padding: 20px 0px;
+    padding-left: 12px;
+    font-size: 16px;
+    border-radius: 15px;
+  }
+  .account .modal .fomik__poler {
+    padding: 20px 0px;
+    padding-left: 12px;
+    font-size: 16px;
+    border-radius: 15px;
+  }
+  .account .modal .fomik__btn {
+    font-size: 18px;
+    height: 55px;
+  }
+}/*# sourceMappingURL=account.css.map */

@@ -1,0 +1,317 @@
+@font-face {
+  font-family: "Stolzl-Regular";
+  src: url("../fonts/stolzl-regular.eot"); /* IE 9 Compatibility Mode */
+  src: url("../fonts/stolzl-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/stolzl-regular.woff2") format("woff2"), url("../fonts/stolzl-regular.woff") format("woff"), url("../fonts/stolzl-regular.ttf") format("truetype"), url("../fonts/stolzl-regular.svg#stolzl-regular") format("svg"); /* Chrome < 4, Legacy iOS */
+}
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.countainer {
+  max-width: 1920px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+body {
+  font-family: "Stolzl-Regular";
+  background-color: #3A3F45;
+}
+
+.bronir {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.bronir__title {
+  margin: 50px 0;
+  font-weight: 500;
+  font-size: 29px;
+  color: #ddd9d9;
+  text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+.bronir .modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.bronir .modal__content {
+  background-color: #646a73;
+  border-radius: 20px;
+  margin: 15% auto;
+  padding: 40px;
+  border: 1px solid #888;
+  width: 30%;
+}
+.bronir .modal__title {
+  font-weight: 500;
+  font-size: 29px;
+  color: #ddd9d9;
+  margin-bottom: 25px;
+}
+.bronir .modal .fomik {
+  display: flex;
+  flex-direction: column;
+  gap: 30px 0px;
+}
+.bronir .modal .fomik__pole {
+  padding: 25px 0px;
+  padding-left: 15px;
+  font-weight: 400;
+  font-size: 24px;
+  color: #efefef;
+  background-color: #8b919a;
+  border-radius: 20px;
+}
+.bronir .modal .fomik__poler {
+  padding: 25px 0px;
+  padding-left: 15px;
+  font-weight: 400;
+  font-size: 24px;
+  color: #efefef;
+  background-color: #8b919a;
+  border-radius: 20px;
+}
+.bronir .modal .fomik__btn {
+  margin-top: 10px;
+  font-weight: 500;
+  font-size: 28px;
+  letter-spacing: 0.05em;
+  color: #fff;
+  background: #f44336;
+  border-radius: 20px;
+  height: 78px;
+}
+.bronir .modal .fomik__btn:hover {
+  transform: scale(1.02);
+  transition: 0.3s;
+}
+.bronir__group {
+  display: flex;
+  justify-content: space-between;
+}
+.bronir__group__items .rad {
+  display: flex;
+  justify-content: space-between;
+  width: 638px;
+  margin-bottom: 15px;
+}
+.bronir__group__items .rad__img {
+  width: 165px;
+  height: 225px;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1350px) and (max-width: 1600px) {
+  .countainer {
+    max-width: 1600px;
+  }
+  .bronir {
+    max-width: 1280px;
+  }
+  .bronir__group__items .rad {
+    width: 575px;
+  }
+  .bronir__group__items .rad__img {
+    width: 150px;
+    height: 100%;
+  }
+}
+@media screen and (min-width: 1150px) and (max-width: 1349px) {
+  .countainer {
+    max-width: 1349px;
+  }
+  .bronir {
+    max-width: 1024px;
+  }
+  .bronir__title {
+    font-size: 27px;
+  }
+  .bronir__group__items .rad {
+    width: 470px;
+  }
+  .bronir__group__items .rad__img {
+    width: 130px;
+    height: 100%;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1149px) {
+  .countainer {
+    max-width: 1149px;
+  }
+  .bronir {
+    max-width: 900px;
+  }
+  .bronir__title {
+    font-size: 24px;
+  }
+  .bronir__group__items .rad {
+    width: 415px;
+  }
+  .bronir__group__items .rad__img {
+    width: 115px;
+    height: 100%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .countainer {
+    max-width: 1023px;
+  }
+  .bronir {
+    max-width: 700px;
+  }
+  .bronir__title {
+    font-size: 23px;
+    margin: 40px 0;
+  }
+  .bronir__group__items .rad {
+    width: 330px;
+  }
+  .bronir__group__items .rad__img {
+    width: 95px;
+    height: 100%;
+  }
+}
+@media screen and (min-width: 640px) and (max-width: 767px) {
+  .countainer {
+    max-width: 767px;
+  }
+  .bronir {
+    max-width: 590px;
+  }
+  .bronir__title {
+    font-size: 22px;
+    margin: 30px 0;
+  }
+  .bronir__group__items .rad {
+    width: 277px;
+  }
+  .bronir__group__items .rad__img {
+    width: 84px;
+    height: 100%;
+  }
+}
+@media screen and (min-width: 525px) and (max-width: 639px) {
+  .countainer {
+    max-width: 639px;
+  }
+  .bronir {
+    max-width: 490px;
+  }
+  .bronir__title {
+    font-size: 20px;
+    margin: 30px 0;
+  }
+  .bronir__group__items .rad {
+    width: 234px;
+  }
+  .bronir__group__items .rad__img {
+    width: 71px;
+    height: 100%;
+  }
+}
+@media screen and (min-width: 467px) and (max-width: 524px) {
+  .countainer {
+    max-width: 524px;
+  }
+  .bronir {
+    max-width: 414px;
+  }
+  .bronir__title {
+    font-size: 20px;
+    margin: 30px 0;
+    margin-top: 15px;
+  }
+  .bronir__group {
+    flex-direction: column;
+  }
+  .bronir__group__items {
+    margin: 0 auto;
+    margin-bottom: 30px;
+    margin-left: 0px;
+  }
+  .bronir__group__items .rad {
+    width: 402px;
+    margin-bottom: 6px;
+  }
+  .bronir__group__items .rad__img {
+    width: 99px;
+    height: 100%;
+  }
+  .bronir__group__items:last-child {
+    margin-bottom: 0px;
+  }
+}
+@media screen and (min-width: 390px) and (max-width: 466px) {
+  .countainer {
+    max-width: 466px;
+  }
+  .bronir {
+    max-width: 340px;
+  }
+  .bronir__title {
+    font-size: 20px;
+    margin: 30px 0;
+    margin-top: 15px;
+  }
+  .bronir__group {
+    flex-direction: column;
+  }
+  .bronir__group__items {
+    margin: 0 auto;
+    margin-bottom: 20px;
+    margin-left: 0px;
+  }
+  .bronir__group__items .rad {
+    max-width: 340px;
+    margin-bottom: 10px;
+  }
+  .bronir__group__items .rad__img {
+    width: 93px;
+    height: 100%;
+  }
+  .bronir__group__items:last-child {
+    margin-bottom: 0px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 389px) {
+  .countainer {
+    max-width: 466px;
+  }
+  .bronir {
+    max-width: 290px;
+  }
+  .bronir__title {
+    font-size: 17px;
+    margin: 30px 0;
+    margin-top: 15px;
+  }
+  .bronir__group {
+    flex-direction: column;
+  }
+  .bronir__group__items {
+    margin: 0 auto;
+    margin-bottom: 20px;
+    margin-left: 0px;
+  }
+  .bronir__group__items .rad {
+    max-width: 287px;
+    margin-bottom: 10px;
+  }
+  .bronir__group__items .rad__img {
+    width: 81px;
+    height: 100%;
+  }
+  .bronir__group__items:last-child {
+    margin-bottom: 0px;
+  }
+}/*# sourceMappingURL=bronir.css.map */

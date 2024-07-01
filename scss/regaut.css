@@ -1,0 +1,1023 @@
+@font-face {
+  font-family: "Stolzl-Regular";
+  src: url("../fonts/stolzl-regular.eot"); /* IE 9 Compatibility Mode */
+  src: url("../fonts/stolzl-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/stolzl-regular.woff2") format("woff2"), url("../fonts/stolzl-regular.woff") format("woff"), url("../fonts/stolzl-regular.ttf") format("truetype"), url("../fonts/stolzl-regular.svg#stolzl-regular") format("svg"); /* Chrome < 4, Legacy iOS */
+}
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.countainer {
+  max-width: 1920px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+body {
+  font-family: "Stolzl-Regular";
+  background-color: #3A3F45;
+}
+
+.reg {
+  display: none;
+  justify-content: space-between;
+  max-width: 1240px;
+  margin: 105px auto;
+  margin-bottom: 55px;
+}
+.reg__left {
+  background-color: #646a73;
+  border-radius: 40px;
+}
+.reg__left .register {
+  display: flex;
+  flex-direction: column;
+  padding: 42px 37px;
+}
+.reg__left .register__title {
+  font-weight: 500;
+  font-size: 29px;
+  color: #ddd9d9;
+  width: 360px;
+  margin-bottom: 60px;
+}
+.reg__left .register__title .red {
+  color: #f44336;
+}
+.reg__left .register__title .row {
+  color: #d4392e;
+}
+.reg__left .register__form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 550px;
+}
+.reg__left .register__form__pole {
+  padding: 25px 20px;
+  padding-left: 25px;
+  font-weight: 400;
+  font-size: 24px;
+  color: #efefef;
+  background-color: #8b919a;
+  border-radius: 20px;
+}
+.reg__left .register__form__btn {
+  margin-top: 10px;
+  font-weight: 500;
+  font-size: 28px;
+  letter-spacing: 0.05em;
+  color: #fff;
+  background: #f44336;
+  border-radius: 20px;
+  height: 78px;
+}
+.reg__left .register__form__btn:hover {
+  transform: scale(1.02);
+  transition: 0.3s;
+}
+.reg__left .register__auht {
+  font-weight: 400;
+  font-size: 24px;
+  color: #efefef;
+  margin: 35px auto;
+}
+.reg__left .register__auht:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+.reg__right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-height: 520px;
+  background-color: #646a73;
+  width: 520px;
+  padding: 53px 0px;
+  border-radius: 40px;
+}
+.reg__right__text {
+  padding-left: 60px;
+  gap: 33px 0px;
+  display: flex;
+  flex-direction: column;
+}
+.reg__right__text__title {
+  font-weight: 400;
+  font-size: 39px;
+  color: #ddd9d9;
+}
+.reg__right__text__title .red {
+  color: #f44336;
+}
+.reg__right__text__title .row {
+  color: #d4392e;
+}
+.reg__right__text__info {
+  font-weight: 400;
+  font-size: 24px;
+  color: #efefef;
+  width: 270px;
+}
+.reg__right__img {
+  margin: 0 auto;
+  width: 189px;
+  height: 199px;
+}
+
+.auht {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1240px;
+  margin: 105px auto;
+  margin-bottom: 55px;
+}
+.auht__left {
+  background-color: #646a73;
+  border-radius: 40px;
+}
+.auht__left .autorization {
+  display: flex;
+  flex-direction: column;
+  padding: 42px 37px;
+}
+.auht__left .autorization__title {
+  font-weight: 500;
+  font-size: 29px;
+  color: #ddd9d9;
+  width: 360px;
+  margin-bottom: 60px;
+}
+.auht__left .autorization__title .red {
+  color: #f44336;
+}
+.auht__left .autorization__title .row {
+  color: #d4392e;
+}
+.auht__left .autorization__form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 550px;
+}
+.auht__left .autorization__form__pole {
+  padding: 25px 20px;
+  padding-left: 25px;
+  font-weight: 400;
+  font-size: 24px;
+  color: #efefef;
+  background-color: #8b919a;
+  border-radius: 20px;
+}
+.auht__left .autorization__form__btn {
+  margin-top: 90px;
+  font-weight: 500;
+  font-size: 28px;
+  letter-spacing: 0.05em;
+  color: #fff;
+  background: #f44336;
+  border-radius: 20px;
+  height: 78px;
+}
+.auht__left .autorization__form__btn:hover {
+  transform: scale(1.02);
+  transition: 0.3s;
+}
+.auht__left .autorization__auht {
+  font-weight: 400;
+  font-size: 24px;
+  color: #efefef;
+  margin: 35px auto;
+}
+.auht__left .autorization__auht:hover {
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+.auht__right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-height: 520px;
+  background-color: #646a73;
+  width: 520px;
+  padding: 53px 0px;
+  border-radius: 40px;
+}
+.auht__right__text {
+  padding-left: 60px;
+  gap: 33px 0px;
+  display: flex;
+  flex-direction: column;
+}
+.auht__right__text__title {
+  font-weight: 400;
+  font-size: 39px;
+  color: #ddd9d9;
+}
+.auht__right__text__title .red {
+  color: #f44336;
+}
+.auht__right__text__title .row {
+  color: #d4392e;
+}
+.auht__right__text__info {
+  font-weight: 400;
+  font-size: 24px;
+  color: #efefef;
+  width: 270px;
+}
+.auht__right__img {
+  margin: 0 auto;
+  width: 189px;
+  height: 199px;
+}
+
+@media screen and (min-width: 1350px) and (max-width: 1600px) {
+  .countainer {
+    max-width: 1600px;
+  }
+  .reg {
+    max-width: 1185px;
+  }
+  .reg__left .register__form {
+    width: 517px;
+  }
+  .auht {
+    max-width: 1185px;
+  }
+  .auht__left .autorization__form {
+    width: 517px;
+  }
+}
+@media screen and (min-width: 1150px) and (max-width: 1349px) {
+  .countainer {
+    max-width: 1349px;
+  }
+  .reg {
+    max-width: 1024px;
+  }
+  .reg__left .register {
+    padding: 42px 30px;
+  }
+  .reg__left .register__form {
+    width: 465px;
+  }
+  .reg__left .register__form__pole {
+    font-size: 20px;
+  }
+  .reg__right {
+    width: 469px;
+  }
+  .reg__right__text {
+    padding-left: 50px;
+  }
+  .auht {
+    max-width: 1024px;
+  }
+  .auht__left .autorization {
+    padding: 42px 30px;
+  }
+  .auht__left .autorization__form {
+    width: 465px;
+  }
+  .auht__left .autorization__form__pole {
+    font-size: 20px;
+  }
+  .auht__right {
+    width: 469px;
+    max-height: 486px;
+  }
+  .auht__right__text {
+    padding-left: 50px;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1149px) {
+  .countainer {
+    max-width: 1149px;
+  }
+  .reg {
+    max-width: 925px;
+  }
+  .reg__left .register {
+    padding: 42px 30px;
+  }
+  .reg__left .register__form {
+    width: 425px;
+    gap: 25px;
+  }
+  .reg__left .register__form__pole {
+    font-size: 20px;
+  }
+  .reg__right {
+    width: 410px;
+    max-height: 500px;
+  }
+  .reg__right__text {
+    padding-left: 40px;
+  }
+  .auht {
+    max-width: 925px;
+  }
+  .auht__left .autorization {
+    padding: 42px 30px;
+  }
+  .auht__left .autorization__form {
+    width: 425px;
+  }
+  .auht__left .autorization__form__pole {
+    font-size: 20px;
+  }
+  .auht__left .autorization__auht {
+    margin-bottom: 20px;
+  }
+  .auht__right {
+    width: 410px;
+    max-height: 486px;
+  }
+  .auht__right__text {
+    padding-left: 40px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .countainer {
+    max-width: 1024px;
+  }
+  .reg {
+    max-width: 695px;
+    margin-bottom: 210px;
+  }
+  .reg__left .register {
+    padding: 35px 20px;
+    padding-bottom: 15px;
+  }
+  .reg__left .register__title {
+    font-size: 25px;
+    width: 280px;
+    margin-bottom: 40px;
+  }
+  .reg__left .register__form {
+    width: 325px;
+    gap: 25px;
+  }
+  .reg__left .register__form__pole {
+    font-size: 20px;
+    padding: 20px 20px;
+    padding-left: 25px;
+  }
+  .reg__left .register__form__btn {
+    font-size: 22px;
+    height: 68px;
+  }
+  .reg__left .register__auht {
+    font-size: 22px;
+    margin: 30px auto;
+    margin-bottom: 20px;
+  }
+  .reg__right {
+    width: 306px;
+    max-height: 350px;
+    padding: 20px 0px;
+    padding-top: 30px;
+  }
+  .reg__right__text {
+    padding-left: 25px;
+  }
+  .reg__right__text__title {
+    font-size: 33px;
+  }
+  .reg__right__text__info {
+    font-size: 19px;
+  }
+  .reg__right__img {
+    width: 130px;
+    height: 140px;
+  }
+  .auht {
+    max-width: 695px;
+    margin-bottom: 210px;
+  }
+  .auht__left .autorization {
+    padding: 42px 17px;
+    padding-bottom: 25px;
+  }
+  .auht__left .autorization__title {
+    font-size: 25px;
+    width: 265px;
+    margin-bottom: 45px;
+  }
+  .auht__left .autorization__form {
+    width: 345px;
+  }
+  .auht__left .autorization__form__pole {
+    font-size: 20px;
+    padding: 20px 20px;
+    padding-left: 25px;
+  }
+  .auht__left .autorization__form__btn {
+    margin-top: 15px;
+    font-size: 25px;
+    height: 68px;
+  }
+  .auht__left .autorization__auht {
+    margin: 30px auto;
+    margin-bottom: 5px;
+    font-size: 19px;
+  }
+  .auht__right {
+    width: 298px;
+    max-height: 350px;
+    padding: 20px 0px;
+    padding-top: 30px;
+  }
+  .auht__right__text {
+    padding-left: 25px;
+  }
+  .auht__right__text__title {
+    font-size: 33px;
+  }
+  .auht__right__text__info {
+    font-size: 19px;
+  }
+  .auht__right__img {
+    width: 130px;
+    height: 140px;
+  }
+}
+@media screen and (min-width: 640px) and (max-width: 767px) {
+  .countainer {
+    max-width: 767px;
+  }
+  .reg {
+    max-width: 695px;
+    justify-content: center;
+  }
+  .reg__left .register {
+    padding: 35px 30px;
+    padding-bottom: 15px;
+  }
+  .reg__left .register__title {
+    font-size: 25px;
+    width: 280px;
+    margin-bottom: 40px;
+  }
+  .reg__left .register__form {
+    width: 345px;
+    gap: 25px;
+  }
+  .reg__left .register__form__pole {
+    font-size: 20px;
+    padding: 20px 20px;
+    padding-left: 25px;
+  }
+  .reg__left .register__form__btn {
+    font-size: 22px;
+    height: 68px;
+  }
+  .reg__left .register__auht {
+    font-size: 22px;
+    margin: 30px auto;
+    margin-bottom: 20px;
+  }
+  .reg__right {
+    display: none;
+    width: 306px;
+    max-height: 350px;
+    padding: 20px 0px;
+    padding-top: 30px;
+  }
+  .reg__right__text {
+    padding-left: 25px;
+  }
+  .reg__right__text__title {
+    font-size: 33px;
+  }
+  .reg__right__text__info {
+    font-size: 19px;
+  }
+  .reg__right__img {
+    width: 130px;
+    height: 140px;
+  }
+  .auht {
+    justify-content: center;
+    max-width: 695px;
+    margin-bottom: 210px;
+  }
+  .auht__left .autorization {
+    padding: 42px 21px;
+    padding-bottom: 25px;
+  }
+  .auht__left .autorization__title {
+    font-size: 25px;
+    width: 265px;
+    margin-bottom: 45px;
+  }
+  .auht__left .autorization__form {
+    width: 345px;
+  }
+  .auht__left .autorization__form__pole {
+    font-size: 20px;
+    padding: 20px 20px;
+    padding-left: 25px;
+  }
+  .auht__left .autorization__form__btn {
+    margin-top: 15px;
+    font-size: 25px;
+    height: 68px;
+  }
+  .auht__left .autorization__auht {
+    margin: 30px auto;
+    margin-bottom: 5px;
+    font-size: 19px;
+  }
+  .auht__right {
+    display: none;
+    width: 298px;
+    max-height: 350px;
+    padding: 20px 0px;
+    padding-top: 30px;
+  }
+  .auht__right__text {
+    padding-left: 25px;
+  }
+  .auht__right__text__title {
+    font-size: 33px;
+  }
+  .auht__right__text__info {
+    font-size: 19px;
+  }
+  .auht__right__img {
+    width: 130px;
+    height: 140px;
+  }
+}
+@media screen and (min-width: 525px) and (max-width: 639px) {
+  .countainer {
+    max-width: 639px;
+  }
+  .reg {
+    max-width: 695px;
+    justify-content: center;
+    margin-bottom: 170px;
+  }
+  .reg__left .register {
+    padding: 35px 25px;
+    padding-bottom: 15px;
+  }
+  .reg__left .register__title {
+    font-size: 20px;
+    width: 280px;
+    margin-bottom: 40px;
+  }
+  .reg__left .register__form {
+    width: 345px;
+    gap: 25px;
+  }
+  .reg__left .register__form__pole {
+    font-size: 19px;
+    padding: 15px 20px;
+    padding-left: 25px;
+    border-radius: 15px;
+  }
+  .reg__left .register__form__btn {
+    font-size: 22px;
+    height: 62px;
+  }
+  .reg__left .register__auht {
+    font-size: 20px;
+    margin: 30px auto;
+    margin-bottom: 20px;
+  }
+  .reg__right {
+    display: none;
+    width: 306px;
+    max-height: 350px;
+    padding: 20px 0px;
+    padding-top: 30px;
+  }
+  .reg__right__text {
+    padding-left: 25px;
+  }
+  .reg__right__text__title {
+    font-size: 33px;
+  }
+  .reg__right__text__info {
+    font-size: 19px;
+  }
+  .reg__right__img {
+    width: 130px;
+    height: 140px;
+  }
+  .auht {
+    justify-content: center;
+    max-width: 695px;
+    margin-bottom: 170px;
+  }
+  .auht__left .autorization {
+    padding: 42px 21px;
+    padding-bottom: 25px;
+  }
+  .auht__left .autorization__title {
+    font-size: 20px;
+    width: 265px;
+    margin-bottom: 45px;
+  }
+  .auht__left .autorization__form {
+    width: 345px;
+  }
+  .auht__left .autorization__form__pole {
+    font-size: 19px;
+    padding: 15px 20px;
+    padding-left: 25px;
+    border-radius: 15px;
+  }
+  .auht__left .autorization__form__btn {
+    margin-top: 10px;
+    font-size: 20px;
+    height: 60px;
+  }
+  .auht__left .autorization__auht {
+    margin: 25px auto;
+    margin-bottom: 11px;
+    font-size: 18px;
+  }
+  .auht__right {
+    display: none;
+    width: 298px;
+    max-height: 350px;
+    padding: 20px 0px;
+    padding-top: 30px;
+  }
+  .auht__right__text {
+    padding-left: 25px;
+  }
+  .auht__right__text__title {
+    font-size: 33px;
+  }
+  .auht__right__text__info {
+    font-size: 19px;
+  }
+  .auht__right__img {
+    width: 130px;
+    height: 140px;
+  }
+}
+@media screen and (min-width: 467px) and (max-width: 524px) {
+  .countainer {
+    max-width: 524px;
+  }
+  .reg {
+    max-width: 695px;
+    justify-content: center;
+    margin-bottom: 170px;
+  }
+  .reg__left .register {
+    padding: 35px 20px;
+    padding-bottom: 15px;
+  }
+  .reg__left .register__title {
+    font-size: 20px;
+    width: 280px;
+    margin-bottom: 40px;
+  }
+  .reg__left .register__form {
+    width: 335px;
+    gap: 17px;
+  }
+  .reg__left .register__form__pole {
+    font-size: 19px;
+    padding: 15px 20px;
+    padding-left: 25px;
+    border-radius: 15px;
+  }
+  .reg__left .register__form__btn {
+    font-size: 20px;
+    height: 59px;
+  }
+  .reg__left .register__auht {
+    font-size: 19px;
+    margin: 27px auto;
+    margin-bottom: 20px;
+  }
+  .reg__right {
+    display: none;
+    width: 306px;
+    max-height: 350px;
+    padding: 20px 0px;
+    padding-top: 30px;
+  }
+  .reg__right__text {
+    padding-left: 25px;
+  }
+  .reg__right__text__title {
+    font-size: 33px;
+  }
+  .reg__right__text__info {
+    font-size: 19px;
+  }
+  .reg__right__img {
+    width: 130px;
+    height: 140px;
+  }
+  .auht {
+    justify-content: center;
+    max-width: 695px;
+    margin-bottom: 170px;
+  }
+  .auht__left .autorization {
+    padding: 42px 18px;
+    padding-bottom: 25px;
+  }
+  .auht__left .autorization__title {
+    font-size: 20px;
+    width: 265px;
+    margin-bottom: 45px;
+  }
+  .auht__left .autorization__form {
+    width: 335px;
+    gap: 20px;
+  }
+  .auht__left .autorization__form__pole {
+    font-size: 19px;
+    padding: 15px 20px;
+    padding-left: 25px;
+    border-radius: 15px;
+  }
+  .auht__left .autorization__form__btn {
+    margin-top: 10px;
+    font-size: 20px;
+    height: 60px;
+  }
+  .auht__left .autorization__auht {
+    margin: 25px auto;
+    margin-bottom: 11px;
+    font-size: 18px;
+  }
+  .auht__right {
+    display: none;
+    width: 298px;
+    max-height: 350px;
+    padding: 20px 0px;
+    padding-top: 30px;
+  }
+  .auht__right__text {
+    padding-left: 25px;
+  }
+  .auht__right__text__title {
+    font-size: 33px;
+  }
+  .auht__right__text__info {
+    font-size: 19px;
+  }
+  .auht__right__img {
+    width: 130px;
+    height: 140px;
+  }
+}
+@media screen and (min-width: 390px) and (max-width: 466px) {
+  .countainer {
+    max-width: 466px;
+  }
+  .reg {
+    max-width: 695px;
+    justify-content: center;
+    margin-bottom: 170px;
+  }
+  .reg__left {
+    border-radius: 30px;
+  }
+  .reg__left .register {
+    padding: 35px 20px;
+    padding-bottom: 15px;
+  }
+  .reg__left .register__title {
+    font-size: 18px;
+    width: 269px;
+    margin-bottom: 40px;
+  }
+  .reg__left .register__form {
+    width: 285px;
+    gap: 17px;
+  }
+  .reg__left .register__form__pole {
+    font-size: 18px;
+    padding: 15px 15px;
+    padding-left: 15px;
+    border-radius: 15px;
+  }
+  .reg__left .register__form__btn {
+    font-size: 18px;
+    height: 50px;
+    border-radius: 15px;
+  }
+  .reg__left .register__auht {
+    font-size: 17px;
+    margin: 23px auto;
+    margin-bottom: 11px;
+  }
+  .reg__right {
+    display: none;
+    width: 306px;
+    max-height: 350px;
+    padding: 20px 0px;
+    padding-top: 30px;
+  }
+  .reg__right__text {
+    padding-left: 25px;
+  }
+  .reg__right__text__title {
+    font-size: 33px;
+  }
+  .reg__right__text__info {
+    font-size: 19px;
+  }
+  .reg__right__img {
+    width: 130px;
+    height: 140px;
+  }
+  .auht {
+    justify-content: center;
+    max-width: 695px;
+    margin-bottom: 170px;
+  }
+  .auht__left {
+    border-radius: 30px;
+  }
+  .auht__left .autorization {
+    padding: 42px 15px;
+    padding-bottom: 25px;
+  }
+  .auht__left .autorization__title {
+    font-size: 20px;
+    width: 265px;
+    margin-bottom: 45px;
+  }
+  .auht__left .autorization__form {
+    width: 305px;
+    gap: 20px;
+  }
+  .auht__left .autorization__form__pole {
+    font-size: 18px;
+    padding: 15px 15px;
+    padding-left: 15px;
+    border-radius: 15px;
+  }
+  .auht__left .autorization__form__btn {
+    margin-top: 10px;
+    height: 50px;
+    border-radius: 15px;
+    font-size: 20px;
+  }
+  .auht__left .autorization__auht {
+    margin: 22px auto;
+    margin-bottom: 11px;
+    font-size: 18px;
+  }
+  .auht__right {
+    display: none;
+    width: 298px;
+    max-height: 350px;
+    padding: 20px 0px;
+    padding-top: 30px;
+  }
+  .auht__right__text {
+    padding-left: 25px;
+  }
+  .auht__right__text__title {
+    font-size: 33px;
+  }
+  .auht__right__text__info {
+    font-size: 19px;
+  }
+  .auht__right__img {
+    width: 130px;
+    height: 140px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 389px) {
+  .countainer {
+    max-width: 466px;
+  }
+  .reg {
+    max-width: 695px;
+    justify-content: center;
+    margin: 60px auto;
+    margin-bottom: 215px;
+  }
+  .reg__left {
+    border-radius: 30px;
+  }
+  .reg__left .register {
+    padding: 30px 15px;
+    padding-bottom: 15px;
+  }
+  .reg__left .register__title {
+    font-size: 18px;
+    width: 220px;
+    margin-bottom: 45px;
+    margin-left: 4px;
+  }
+  .reg__left .register__form {
+    width: 260px;
+    gap: 15px;
+  }
+  .reg__left .register__form__pole {
+    font-size: 17px;
+    padding: 15px 10px;
+    padding-left: 10px;
+    border-radius: 15px;
+  }
+  .reg__left .register__form__btn {
+    margin-top: 10px;
+    height: 50px;
+    border-radius: 15px;
+    font-size: 17px;
+  }
+  .reg__left .register__auht {
+    margin: 22px auto;
+    margin-bottom: 0px;
+    font-size: 14px;
+  }
+  .reg__right {
+    display: none;
+    width: 306px;
+    max-height: 350px;
+    padding: 20px 0px;
+    padding-top: 30px;
+  }
+  .reg__right__text {
+    padding-left: 25px;
+  }
+  .reg__right__text__title {
+    font-size: 33px;
+  }
+  .reg__right__text__info {
+    font-size: 19px;
+  }
+  .reg__right__img {
+    width: 130px;
+    height: 140px;
+  }
+  .auht {
+    justify-content: center;
+    max-width: 695px;
+    margin: 60px auto;
+    margin-bottom: 250px;
+  }
+  .auht__left {
+    border-radius: 30px;
+  }
+  .auht__left .autorization {
+    padding: 42px 15px;
+    padding-bottom: 25px;
+  }
+  .auht__left .autorization__title {
+    font-size: 18px;
+    width: 220px;
+    margin-bottom: 45px;
+    margin-left: 4px;
+  }
+  .auht__left .autorization__form {
+    width: 260px;
+    gap: 15px;
+  }
+  .auht__left .autorization__form__pole {
+    font-size: 17px;
+    padding: 15px 10px;
+    padding-left: 10px;
+    border-radius: 15px;
+  }
+  .auht__left .autorization__form__btn {
+    margin-top: 10px;
+    height: 50px;
+    border-radius: 15px;
+    font-size: 17px;
+  }
+  .auht__left .autorization__auht {
+    margin: 22px auto;
+    margin-bottom: 0px;
+    font-size: 14px;
+  }
+  .auht__right {
+    display: none;
+    width: 298px;
+    max-height: 350px;
+    padding: 20px 0px;
+    padding-top: 30px;
+  }
+  .auht__right__text {
+    padding-left: 25px;
+  }
+  .auht__right__text__title {
+    font-size: 33px;
+  }
+  .auht__right__text__info {
+    font-size: 19px;
+  }
+  .auht__right__img {
+    width: 130px;
+    height: 140px;
+  }
+}/*# sourceMappingURL=regaut.css.map */

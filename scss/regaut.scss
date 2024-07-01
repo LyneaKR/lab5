@@ -1,0 +1,1861 @@
+@font-face {
+	font-family: 'Stolzl-Regular';
+	src: url('../fonts/stolzl-regular.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/stolzl-regular.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/stolzl-regular.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/stolzl-regular.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/stolzl-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/stolzl-regular.svg#stolzl-regular') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+
+.countainer {
+    max-width: 1920px;
+    margin: 0 auto;
+    width: 100%;
+	
+
+}
+
+body {
+	font-family: 'Stolzl-Regular';
+	background-color: #3A3F45;
+
+	
+}
+
+.reg {
+	display: none;
+	justify-content: space-between;
+	max-width: 1240px;
+	margin: 105px auto;
+	margin-bottom: 55px;
+
+	&__left {
+		background-color: #646a73;
+		border-radius: 40px;
+
+		.register {
+			display: flex;
+			flex-direction: column;
+			padding: 42px 37px;
+			
+			&__title {
+				font-weight: 500;
+				font-size: 29px;
+				color: #ddd9d9;
+				width: 360px;
+				margin-bottom: 60px;
+
+				.red {
+					color: #f44336;
+
+				}
+
+				.row {
+					color: #d4392e;
+
+				}
+			}
+	
+	
+			&__form {
+				display: flex;
+				flex-direction: column;
+				gap: 30px;
+				width: 550px;
+
+				&__pole {
+					padding: 25px 20px;
+					padding-left: 25px;
+					font-weight: 400;
+					font-size: 24px;
+					color: #efefef;
+					background-color: #8b919a;
+					border-radius: 20px;
+
+				}
+	
+				&__btn {
+					margin-top: 10px;
+					font-weight: 500;
+					font-size: 28px;
+					letter-spacing: 0.05em;
+					color: #fff;
+					
+					background: #f44336;
+					border-radius: 20px;
+					height: 78px;
+				}
+				&__btn:hover {
+					transform: scale(1.02);
+					transition: 0.3s;
+				}
+	
+	
+			}
+	
+			&__auht {
+				font-weight: 400;
+				font-size: 24px;
+				color: #efefef;
+				margin: 35px auto;
+
+			}
+	
+			&__auht:hover{
+
+				transform: scale(1.1);
+				transition: 0.3s;
+			}
+	
+		}
+
+	}
+
+	&__right {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		max-height: 520px;
+		background-color: #646a73;
+		width: 520px;
+		padding: 53px 0px;
+		border-radius: 40px;
+
+		&__text {
+			padding-left: 60px;
+			gap: 33px 0px;
+			display: flex;
+			flex-direction: column;
+
+			&__title {
+				font-weight: 400;
+				font-size: 39px;
+				color: #ddd9d9;
+
+				.red {
+					color: #f44336;
+
+				}
+
+
+				.row {
+					color: #d4392e;
+
+				}
+			}
+
+			&__info {
+				font-weight: 400;
+				font-size: 24px;
+				color: #efefef;
+				width: 270px;
+			}
+
+		}
+
+		&__img {
+			margin: 0 auto;
+			width: 189px;
+			height: 199px;
+		}
+
+
+	}
+
+
+}
+
+
+.auht {
+	display: flex;
+	justify-content: space-between;
+	max-width: 1240px;
+	margin: 105px auto;
+	margin-bottom: 55px;
+
+	&__left {
+		background-color: #646a73;
+		border-radius: 40px;
+
+		.autorization {
+			display: flex;
+			flex-direction: column;
+			padding: 42px 37px;
+			
+			&__title {
+				font-weight: 500;
+				font-size: 29px;
+				color: #ddd9d9;
+				width: 360px;
+				margin-bottom: 60px;
+
+				.red {
+					color: #f44336;
+
+				}
+
+				.row {
+					color: #d4392e;
+
+				}
+			}
+	
+	
+			&__form {
+				display: flex;
+				flex-direction: column;
+				gap: 30px;
+				width: 550px;
+
+				&__pole {
+					padding: 25px 20px;
+					padding-left: 25px;
+					font-weight: 400;
+					font-size: 24px;
+					color: #efefef;
+					background-color: #8b919a;
+					border-radius: 20px;
+
+				}
+	
+				&__btn {
+					margin-top: 90px;
+					font-weight: 500;
+					font-size: 28px;
+					letter-spacing: 0.05em;
+					color: #fff;
+					background: #f44336;
+					border-radius: 20px;
+					height: 78px;
+				}
+
+				&__btn:hover {
+					transform: scale(1.02);
+					transition: 0.3s;
+				}
+	
+			}
+	
+			&__auht {
+				font-weight: 400;
+				font-size: 24px;
+				color: #efefef;
+				margin: 35px auto;
+
+			}
+	
+				
+			&__auht:hover{
+
+				transform: scale(1.05);
+				transition: 0.3s;
+			}
+	
+		}
+
+	}
+
+	&__right {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		max-height: 520px;
+		background-color: #646a73;
+		width: 520px;
+		padding: 53px 0px;
+		border-radius: 40px;
+
+		&__text {
+			padding-left: 60px;
+			gap: 33px 0px;
+			display: flex;
+			flex-direction: column;
+
+			&__title {
+				font-weight: 400;
+				font-size: 39px;
+				color: #ddd9d9;
+
+				.red {
+					color: #f44336;
+
+				}
+
+
+				.row {
+					color: #d4392e;
+
+				}
+			}
+
+			&__info {
+				font-weight: 400;
+				font-size: 24px;
+				color: #efefef;
+				width: 270px;
+			}
+
+		}
+
+		&__img {
+			margin: 0 auto;
+			width: 189px;
+			height: 199px;
+		}
+
+
+	}
+
+
+}
+
+
+@media screen and (min-width:1350px) and (max-width:1600px) {
+
+	.countainer {
+		max-width: 1600px;
+	
+	}
+
+	.reg {
+		max-width: 1185px;
+	
+		&__left {
+
+	
+			.register {
+				
+				
+				&__title {
+				
+	
+					
+				}
+		
+		
+				&__form {
+					width: 517px;
+	
+					&__pole {
+					
+	
+					}
+		
+					&__btn {
+						
+					}
+			
+		
+		
+				}
+		
+				&__auht {
+				
+	
+				}
+		
+				
+		
+			}
+	
+		}
+	
+		&__right {
+			
+	
+			&__text {
+				
+	
+				&__title {
+					
+				}
+	
+				&__info {
+				
+				}
+	
+			}
+	
+			&__img {
+				
+			}
+	
+	
+		}
+	
+	
+	}
+	
+	
+	.auht {
+	    max-width: 1185px;
+	
+		&__left {
+		
+	
+			.autorization {
+			
+				&__title {
+					
+	
+				
+				}
+		
+		
+				&__form {
+					width: 517px;
+	
+					&__pole {
+				
+	
+					}
+		
+					&__btn {
+					
+					}
+	
+				
+		
+				}
+		
+				&__auht {
+				
+	
+				}
+		
+					
+			
+		
+			}
+	
+		}
+	
+		&__right {
+
+	
+			&__text {
+	
+	
+				&__title {
+					
+	
+				}
+	
+				&__info {
+	
+				}
+	
+			}
+	
+			&__img {
+		
+			}
+	
+	
+		}
+	
+	
+	}
+
+
+}
+
+@media screen and (min-width:1150px) and (max-width:1349px) {
+
+	.countainer {
+		max-width: 1349px;
+	
+	}
+
+	.reg {
+		max-width: 1024px;
+	
+		&__left {
+
+	
+			.register {
+				padding: 42px 30px;
+				
+				&__title {
+				
+	
+					
+				}
+		
+		
+				&__form {
+					width: 465px;
+	
+					&__pole {
+					    font-size: 20px;
+	
+					}
+		
+					&__btn {
+						
+					}
+			
+		
+		
+				}
+		
+				&__auht {
+				
+	
+				}
+		
+				
+		
+			}
+	
+		}
+	
+		&__right {
+			width: 469px;
+	
+			&__text {
+				padding-left: 50px;
+	
+				&__title {
+					
+				}
+	
+				&__info {
+				
+				}
+	
+			}
+	
+			&__img {
+				
+			}
+	
+	
+		}
+	
+	
+	}
+	
+	
+	.auht {
+        max-width: 1024px;
+	
+		&__left {
+		
+	
+			.autorization {
+			    padding: 42px 30px;
+				&__title {
+					
+	
+				
+				}
+		
+		
+				&__form {
+					width: 465px;
+	
+					&__pole {
+						font-size: 20px;
+	
+					}
+		
+					&__btn {
+					
+					}
+	
+				
+		
+				}
+		
+				&__auht {
+				
+	
+				}
+		
+					
+			
+		
+			}
+	
+		}
+	
+		&__right {
+
+			width: 469px;
+			max-height: 486px;
+			&__text {
+				padding-left: 50px;
+	
+				&__title {
+					
+	
+				}
+	
+				&__info {
+	
+				}
+	
+			}
+	
+			&__img {
+		
+			}
+	
+	
+		}
+	
+	
+	}
+
+
+}
+
+@media screen and (min-width:1024px) and (max-width:1149px) {
+
+	.countainer {
+		max-width: 1149px;
+	
+	}
+
+	.reg {
+        max-width: 925px;
+	
+		&__left {
+
+	
+			.register {
+				padding: 42px 30px;
+				
+				&__title {
+				
+	
+					
+				}
+		
+		
+				&__form {
+			        width: 425px;
+					gap: 25px;
+					&__pole {
+					    font-size: 20px;
+	
+					}
+		
+					&__btn {
+						
+					}
+			
+		
+		
+				}
+		
+				&__auht {
+				
+	
+				}
+		
+				
+		
+			}
+	
+		}
+	
+		&__right {
+			width: 410px;
+			max-height: 500px;
+			&__text {
+				padding-left: 40px;
+	
+				&__title {
+					
+				}
+	
+				&__info {
+				
+				}
+	
+			}
+	
+			&__img {
+				
+			}
+	
+	
+		}
+	
+	
+	}
+	
+	
+	.auht {
+        max-width: 925px;
+	
+		&__left {
+		
+	
+			.autorization {
+			    padding: 42px 30px;
+				&__title {
+					
+	
+				
+				}
+		
+		
+				&__form {
+					width: 425px;
+	
+					&__pole {
+						font-size: 20px;
+	
+					}
+		
+					&__btn {
+					
+					}
+	
+				
+		
+				}
+		
+				&__auht {
+					margin-bottom: 20px;
+	
+				}
+		
+					
+			
+		
+			}
+	
+		}
+	
+		&__right {
+
+			width: 410px;
+			max-height: 486px;
+			&__text {
+		        padding-left: 40px;
+	
+				&__title {
+					
+	
+				}
+	
+				&__info {
+	
+				}
+	
+			}
+	
+			&__img {
+		
+			}
+	
+	
+		}
+	
+	
+	}
+
+
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+
+	.countainer {
+		max-width: 1024px;
+	
+	}
+
+	.reg {
+		max-width: 695px;
+		margin-bottom: 210px;
+		&__left {
+
+	
+			.register {
+				padding: 35px 20px;
+				padding-bottom: 15px;
+
+				&__title {
+					font-size: 25px;
+					width: 280px;
+					margin-bottom: 40px;
+					
+				}
+		
+		
+				&__form {
+					width: 325px;
+					gap: 25px;
+
+					&__pole {
+					    font-size: 20px;
+						padding: 20px 20px;
+						padding-left: 25px;
+					}
+		
+					&__btn {
+						font-size: 22px;
+						height: 68px;
+					}
+			
+		
+		
+				}
+		
+				&__auht {
+					font-size: 22px;
+			
+					margin: 30px auto;
+					margin-bottom: 20px;
+				}
+		
+				
+		
+			}
+	
+		}
+	
+		&__right {
+
+	        width: 306px;
+			max-height: 350px;
+			padding: 20px 0px;
+			padding-top: 30px;
+
+			&__text {
+				padding-left: 25px;
+	
+				&__title {
+					
+					font-size: 33px;
+				}
+	
+				&__info {
+			        font-size: 19px;
+					
+				}
+	
+			}
+	
+			&__img {
+				width: 130px;
+				height: 140px;
+			}
+	
+	
+		}
+	
+	
+	}
+	
+	
+	.auht {
+		max-width: 695px;
+		margin-bottom: 210px;
+		&__left {
+		
+	
+			.autorization {
+			    padding: 42px 17px;
+				padding-bottom: 25px;
+
+				&__title {
+					font-size: 25px;
+					width: 265px;
+					margin-bottom: 45px;
+				
+				}
+		
+		
+				&__form {
+					width: 345px;
+	
+					&__pole {
+						font-size: 20px;
+						padding: 20px 20px;
+						padding-left: 25px;
+					}
+		
+					&__btn {
+						margin-top: 15px;
+						font-size: 25px;
+						height: 68px;
+					}
+	
+				
+		
+				}
+		
+				&__auht {
+					margin: 30px auto;
+			        margin-bottom: 5px;
+					font-size: 19px;
+				}
+		
+					
+			
+		
+			}
+	
+		}
+	
+		&__right {
+
+	        width: 298px;
+			max-height: 350px;
+			padding: 20px 0px;
+			padding-top: 30px;
+
+			&__text {
+				padding-left: 25px;
+	
+				&__title {
+					
+					font-size: 33px;
+				}
+	
+				&__info {
+			        font-size: 19px;
+					
+				}
+	
+			}
+	
+			&__img {
+				width: 130px;
+				height: 140px;
+			}
+	
+	
+		}
+	
+	
+	}
+
+
+}
+
+@media screen and (min-width:640px) and (max-width:767px) {
+
+	.countainer {
+		max-width: 767px;
+	
+	}
+
+	.reg {
+		max-width: 695px;
+		justify-content: center;
+		&__left {
+
+	
+			.register {
+				padding: 35px 30px;
+				padding-bottom: 15px;
+
+				&__title {
+					font-size: 25px;
+					width: 280px;
+					margin-bottom: 40px;
+					
+				}
+		
+		
+				&__form {
+					width: 345px;
+					gap: 25px;
+
+					&__pole {
+					    font-size: 20px;
+						padding: 20px 20px;
+						padding-left: 25px;
+					}
+		
+					&__btn {
+						font-size: 22px;
+						height: 68px;
+					}
+			
+		
+		
+				}
+		
+				&__auht {
+					font-size: 22px;
+			
+					margin: 30px auto;
+					margin-bottom: 20px;
+				}
+		
+				
+		
+			}
+	
+		}
+	
+		&__right {
+			display: none;
+	        width: 306px;
+			max-height: 350px;
+			padding: 20px 0px;
+			padding-top: 30px;
+
+			&__text {
+				padding-left: 25px;
+	
+				&__title {
+					
+					font-size: 33px;
+				}
+	
+				&__info {
+			        font-size: 19px;
+					
+				}
+	
+			}
+	
+			&__img {
+				width: 130px;
+				height: 140px;
+			}
+	
+	
+		}
+	
+	
+	}
+	
+	
+	.auht {
+		justify-content: center;
+		max-width: 695px;
+		margin-bottom: 210px;
+		&__left {
+		
+	
+			.autorization {
+				padding: 42px 21px;
+				padding-bottom: 25px;
+
+				&__title {
+					font-size: 25px;
+					width: 265px;
+					margin-bottom: 45px;
+				
+				}
+		
+		
+				&__form {
+					width: 345px;
+	
+					&__pole {
+						font-size: 20px;
+						padding: 20px 20px;
+						padding-left: 25px;
+					}
+		
+					&__btn {
+						margin-top: 15px;
+						font-size: 25px;
+						height: 68px;
+					}
+	
+				
+		
+				}
+		
+				&__auht {
+					margin: 30px auto;
+			        margin-bottom: 5px;
+					font-size: 19px;
+				}
+		
+					
+			
+		
+			}
+	
+		}
+	
+		&__right {
+			display: none;
+	        width: 298px;
+			max-height: 350px;
+			padding: 20px 0px;
+			padding-top: 30px;
+
+			&__text {
+				padding-left: 25px;
+	
+				&__title {
+					
+					font-size: 33px;
+				}
+	
+				&__info {
+			        font-size: 19px;
+					
+				}
+	
+			}
+	
+			&__img {
+				width: 130px;
+				height: 140px;
+			}
+	
+	
+		}
+	
+	
+	}
+
+
+}
+
+@media screen and (min-width:525px) and (max-width:639px) {
+
+	.countainer {
+		max-width: 639px;
+	
+	}
+
+	.reg {
+		max-width: 695px;
+		justify-content: center;
+		margin-bottom: 170px;
+		&__left {
+
+	
+			.register {
+		        padding: 35px 25px;
+				padding-bottom: 15px;
+
+				&__title {
+					font-size: 20px;
+					width: 280px;
+					margin-bottom: 40px;
+					
+				}
+		
+		
+				&__form {
+					width: 345px;
+					gap: 25px;
+
+					&__pole {
+					    font-size: 19px;
+						padding: 15px 20px;
+						padding-left: 25px;
+						border-radius: 15px;
+					}
+		
+					&__btn {
+						font-size: 22px;
+						height: 62px;
+					}
+			
+		
+		
+				}
+		
+				&__auht {
+					font-size: 20px;
+			
+					margin: 30px auto;
+					margin-bottom: 20px;
+				}
+		
+				
+		
+			}
+	
+		}
+	
+		&__right {
+			display: none;
+	        width: 306px;
+			max-height: 350px;
+			padding: 20px 0px;
+			padding-top: 30px;
+
+			&__text {
+				padding-left: 25px;
+	
+				&__title {
+					
+					font-size: 33px;
+				}
+	
+				&__info {
+			        font-size: 19px;
+					
+				}
+	
+			}
+	
+			&__img {
+				width: 130px;
+				height: 140px;
+			}
+	
+	
+		}
+	
+	
+	}
+	
+	
+	.auht {
+		justify-content: center;
+		max-width: 695px;
+        margin-bottom: 170px;
+		&__left {
+		
+	
+			.autorization {
+				padding: 42px 21px;
+				padding-bottom: 25px;
+
+				&__title {
+					font-size: 20px;
+					width: 265px;
+					margin-bottom: 45px;
+				
+				}
+		
+		
+				&__form {
+					width: 345px;
+	
+					&__pole {
+						font-size: 19px;
+						padding: 15px 20px;
+						padding-left: 25px;
+						border-radius: 15px;
+					}
+		
+					&__btn {
+						margin-top: 10px;
+						font-size: 20px;
+						height: 60px;
+					}
+	
+				
+		
+				}
+		
+				&__auht {
+			        margin: 25px auto;
+					margin-bottom: 11px;
+					font-size: 18px;
+				}
+		
+					
+			
+		
+			}
+	
+		}
+	
+		&__right {
+			display: none;
+	        width: 298px;
+			max-height: 350px;
+			padding: 20px 0px;
+			padding-top: 30px;
+
+			&__text {
+				padding-left: 25px;
+	
+				&__title {
+					
+					font-size: 33px;
+				}
+	
+				&__info {
+			        font-size: 19px;
+					
+				}
+	
+			}
+	
+			&__img {
+				width: 130px;
+				height: 140px;
+			}
+	
+	
+		}
+	
+	
+	}
+
+
+}
+
+@media screen and (min-width:467px) and (max-width:524px) {
+
+	.countainer {
+		max-width: 524px;
+	
+	}
+
+	.reg {
+		max-width: 695px;
+		justify-content: center;
+		margin-bottom: 170px;
+		&__left {
+
+	
+			.register {
+		        padding: 35px 20px;
+				padding-bottom: 15px;
+
+				&__title {
+					font-size: 20px;
+					width: 280px;
+					margin-bottom: 40px;
+					
+				}
+		
+		
+				&__form {
+					width: 335px;
+					gap: 17px;
+
+					&__pole {
+					    font-size: 19px;
+						padding: 15px 20px;
+						padding-left: 25px;
+						border-radius: 15px;
+					}
+		
+					&__btn {
+						font-size: 20px;
+						height: 59px;
+					}
+			
+		
+		
+				}
+		
+				&__auht {
+					font-size: 19px;
+					margin: 27px auto;
+					margin-bottom: 20px;
+				}
+		
+				
+		
+			}
+	
+		}
+	
+		&__right {
+			display: none;
+	        width: 306px;
+			max-height: 350px;
+			padding: 20px 0px;
+			padding-top: 30px;
+
+			&__text {
+				padding-left: 25px;
+	
+				&__title {
+					
+					font-size: 33px;
+				}
+	
+				&__info {
+			        font-size: 19px;
+					
+				}
+	
+			}
+	
+			&__img {
+				width: 130px;
+				height: 140px;
+			}
+	
+	
+		}
+	
+	
+	}
+	
+	
+	.auht {
+		justify-content: center;
+		max-width: 695px;
+        margin-bottom: 170px;
+		&__left {
+		
+	
+			.autorization {
+				padding: 42px 18px;
+				padding-bottom: 25px;
+
+				&__title {
+					font-size: 20px;
+					width: 265px;
+					margin-bottom: 45px;
+				
+				}
+		
+		
+				&__form {
+					width: 335px;
+					gap: 20px;
+	
+					&__pole {
+						font-size: 19px;
+						padding: 15px 20px;
+						padding-left: 25px;
+						border-radius: 15px;
+					}
+		
+					&__btn {
+						margin-top: 10px;
+						font-size: 20px;
+						height: 60px;
+					}
+	
+				
+		
+				}
+		
+				&__auht {
+			        margin: 25px auto;
+					margin-bottom: 11px;
+					font-size: 18px;
+				}
+		
+					
+			
+		
+			}
+	
+		}
+	
+		&__right {
+			display: none;
+	        width: 298px;
+			max-height: 350px;
+			padding: 20px 0px;
+			padding-top: 30px;
+
+			&__text {
+				padding-left: 25px;
+	
+				&__title {
+					
+					font-size: 33px;
+				}
+	
+				&__info {
+			        font-size: 19px;
+					
+				}
+	
+			}
+	
+			&__img {
+				width: 130px;
+				height: 140px;
+			}
+	
+	
+		}
+	
+	
+	}
+
+
+}
+
+@media screen and (min-width:390px) and (max-width:466px) {
+
+	.countainer {
+		max-width: 466px;
+	
+	}
+
+	.reg {
+		max-width: 695px;
+		justify-content: center;
+		margin-bottom: 170px;
+
+		&__left {
+			border-radius: 30px;
+	
+			.register {
+		        padding: 35px 20px;
+				padding-bottom: 15px;
+
+				&__title {
+					font-size: 18px;
+					width: 269px;
+					margin-bottom: 40px;
+					
+				}
+		
+		
+				&__form {
+					width: 285px;
+					gap: 17px;
+
+					&__pole {
+						font-size: 18px;
+						padding: 15px 15px;
+						padding-left: 15px;
+						border-radius: 15px;
+					}
+		
+					&__btn {
+						font-size: 18px;
+						height: 50px;
+						border-radius: 15px;
+					}
+			
+		
+		
+				}
+		
+				&__auht {
+					font-size: 17px;
+			        margin: 23px auto;
+        			margin-bottom: 11px;
+				}
+		
+				
+		
+			}
+	
+		}
+	
+		&__right {
+			display: none;
+	        width: 306px;
+			max-height: 350px;
+			padding: 20px 0px;
+			padding-top: 30px;
+
+			&__text {
+				padding-left: 25px;
+	
+				&__title {
+					
+					font-size: 33px;
+				}
+	
+				&__info {
+			        font-size: 19px;
+					
+				}
+	
+			}
+	
+			&__img {
+				width: 130px;
+				height: 140px;
+			}
+	
+	
+		}
+	
+	
+	}
+	
+	
+	.auht {
+		justify-content: center;
+		max-width: 695px;
+        margin-bottom: 170px;
+		&__left {
+		    border-radius: 30px;
+	
+			.autorization {
+				padding: 42px 15px;
+				padding-bottom: 25px;
+
+				&__title {
+					font-size: 20px;
+					width: 265px;
+					margin-bottom: 45px;
+				
+				}
+		
+		
+				&__form {
+					width: 305px;
+					gap: 20px;
+	
+					&__pole {
+						font-size: 18px;
+						padding: 15px 15px;
+						padding-left: 15px;
+						border-radius: 15px;
+					}
+		
+					&__btn {
+						margin-top: 10px;
+						height: 50px;
+						border-radius: 15px;
+						font-size: 20px;
+					}
+	
+				
+		
+				}
+		
+				&__auht {
+					margin: 22px auto;
+					margin-bottom: 11px;
+					font-size: 18px;
+				}
+		
+					
+			
+		
+			}
+	
+		}
+	
+		&__right {
+			display: none;
+	        width: 298px;
+			max-height: 350px;
+			padding: 20px 0px;
+			padding-top: 30px;
+
+			&__text {
+				padding-left: 25px;
+	
+				&__title {
+					
+					font-size: 33px;
+				}
+	
+				&__info {
+			        font-size: 19px;
+					
+				}
+	
+			}
+	
+			&__img {
+				width: 130px;
+				height: 140px;
+			}
+	
+	
+		}
+	
+	
+	}
+
+
+}
+
+@media screen and (min-width:320px) and (max-width:389px) {
+
+	.countainer {
+		max-width: 466px;
+	
+	}
+
+	.reg {
+		max-width: 695px;
+		justify-content: center;
+		margin: 60px auto;
+		margin-bottom: 215px;
+
+		&__left {
+			border-radius: 30px;
+	
+			.register {
+				padding: 30px 15px;
+				padding-bottom: 15px;
+
+				&__title {
+					font-size: 18px;
+					width: 220px;
+					margin-bottom: 45px;
+					margin-left: 4px;
+					
+				}
+		
+		
+				&__form {
+					width: 260px;
+					gap: 15px;
+	
+					&__pole {
+						font-size: 17px;
+						padding: 15px 10px;
+						padding-left: 10px;
+						border-radius: 15px;
+					}
+		
+					&__btn {
+						margin-top: 10px;
+						height: 50px;
+						border-radius: 15px;
+				        font-size: 17px;
+					}
+			
+		
+		
+				}
+		
+				&__auht {
+					margin: 22px auto;
+					margin-bottom: 0px;
+					font-size: 14px;
+				}
+		
+				
+		
+			}
+	
+		}
+	
+		&__right {
+			display: none;
+	        width: 306px;
+			max-height: 350px;
+			padding: 20px 0px;
+			padding-top: 30px;
+
+			&__text {
+				padding-left: 25px;
+	
+				&__title {
+					
+					font-size: 33px;
+				}
+	
+				&__info {
+			        font-size: 19px;
+					
+				}
+	
+			}
+	
+			&__img {
+				width: 130px;
+				height: 140px;
+			}
+	
+	
+		}
+	
+	
+	}
+	
+	
+	.auht {
+		justify-content: center;
+		max-width: 695px;
+		margin: 60px auto;
+		margin-bottom: 250px;
+		&__left {
+		    border-radius: 30px;
+	
+			.autorization {
+				padding: 42px 15px;
+				padding-bottom: 25px;
+
+				&__title {
+					font-size: 18px;
+					width: 220px;
+					margin-bottom: 45px;
+					margin-left: 4px;
+				}
+		
+		
+				&__form {
+					width: 260px;
+					gap: 15px;
+	
+					&__pole {
+						font-size: 17px;
+						padding: 15px 10px;
+						padding-left: 10px;
+						border-radius: 15px;
+					}
+		
+					&__btn {
+						margin-top: 10px;
+						height: 50px;
+						border-radius: 15px;
+				        font-size: 17px;
+					}
+	
+				
+		
+				}
+		
+				&__auht {
+					margin: 22px auto;
+					margin-bottom: 0px;
+					font-size: 14px;
+				}
+		
+					
+			
+		
+			}
+	
+		}
+	
+		&__right {
+			display: none;
+	        width: 298px;
+			max-height: 350px;
+			padding: 20px 0px;
+			padding-top: 30px;
+
+			&__text {
+				padding-left: 25px;
+	
+				&__title {
+					
+					font-size: 33px;
+				}
+	
+				&__info {
+			        font-size: 19px;
+					
+				}
+	
+			}
+	
+			&__img {
+				width: 130px;
+				height: 140px;
+			}
+	
+	
+		}
+	
+	
+	}
+
+
+}

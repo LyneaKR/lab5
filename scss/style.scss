@@ -1,0 +1,3544 @@
+@font-face {
+	font-family: 'Stolzl-Regular';
+	src: url('../fonts/stolzl-regular.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/stolzl-regular.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/stolzl-regular.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/stolzl-regular.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/stolzl-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/stolzl-regular.svg#stolzl-regular') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+
+.countainer {
+    max-width: 1920px;
+    margin: 0 auto;
+    width: 100%;
+	
+
+}
+
+body {
+	font-family: 'Stolzl-Regular';
+	background-color: #3A3F45;
+
+	
+}
+
+
+.header {
+
+	background-color: #646A73;
+
+	&__items {
+
+		max-width: 1440px;
+		margin: 0 auto;
+		padding-top: 15px;
+		padding-bottom: 20px;
+	
+
+		&__it {
+
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+
+			.start {
+				display: flex;
+				
+				align-items: center;
+				.logo {
+					text-decoration: none;
+					font-weight: 400;
+					font-size: 39px;
+					color: #f44336;
+					margin-right: 117px;
+					&__osnov {
+						
+						color: #ddd9d9;
+					}
+	
+					&__tochk {
+						color: #d4392e;
+	
+					}
+	
+				}
+	
+				.item {
+					text-decoration: none;
+					margin-right: 44px;
+					font-weight: 400;
+					font-size: 23px;
+					color: #d9d9d9;
+				}
+	
+				.item:last-child {
+					margin-right: 0px;
+				}
+
+			}
+			
+			.button {
+				margin-top: 7px;
+
+				.btn {
+					text-decoration: none;
+					border: 1.63px #E4E3E3 solid;
+					border-radius: 42px;
+					padding: 0px 22px;
+					padding-top: 12px;
+					padding-bottom: 15px;
+					font-weight: 400;
+					font-size: 18px;
+					line-height: 120%;
+					color: #e4e3e3;
+				}
+			}
+
+
+
+		}
+	}
+
+}
+
+
+.open {
+    display: flex !important;
+}
+
+.burger {
+    display: none;
+    position: relative;
+    z-index: 50;
+    align-items: center;
+    justify-content: flex-end;
+    width: 30px;
+    height: 21px;
+	margin: 15px 0;
+    margin-right: 5%;
+
+    .qaz {
+
+        top: 9.5px;
+        left: 6px;
+        position: relative;
+        z-index: 50;
+        height: 2px;
+        width: 80%;
+        transform: scale(1);
+        background-color: #ffffff;
+    }
+    
+    .qaz.active {
+        display:none;
+    }
+    
+    
+
+}
+
+
+.burger::before, .burger::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background-color: #ffffff;
+    transition: all 0.3s ease 0s;
+}
+
+.burger::before { top: 0 }
+
+.burger::after { bottom: 0 }
+
+.burger.active span { transform: scale(0) }
+
+.burger.active::before {
+    top: 50%;
+    transform: rotate(-45deg) translate(0, -50%);
+}
+
+.burger.active::after{
+    top: 50%;
+    transform: rotate(45deg) translate(0, 50%);
+}
+
+
+
+
+.main {
+	display: flex;
+	flex-direction: column;
+	margin-top: 40px;
+
+
+
+	.main__slider {
+		position: relative;
+		width: 1440px;
+		height: 807px;
+		margin: 0 auto;
+		overflow: hidden;
+	  }
+	  .slide.active {
+		opacity: 1;
+	  }
+
+	  .slide {
+		position: absolute;
+		border-radius: 40px;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		opacity: 0;
+		transition: opacity 0.5s ease-in-out;
+	  }
+
+
+
+	.button {
+		margin: 0 auto;
+		position: relative;
+		top: -65px;
+
+		.btn {
+			border: 1.63px #E4E3E3 solid;
+			text-decoration: none;
+			border-radius: 42px;
+			padding: 0px 22px;
+			padding-top: 12px;
+			padding-bottom: 15px;
+			font-weight: 400;
+			font-size: 18px;
+			line-height: 120%;
+			color: #e4e3e3;
+		}
+	}
+
+
+}
+
+.onas {
+	max-width: 1440px;
+	margin: 120px auto;
+
+	&__title {
+		font-weight: 500;
+		font-size: 38px;
+		color: #ddd9d9;
+		text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+		margin-bottom: 40px;
+	}
+
+	&__text {
+		width: 1125px;
+		&__one {
+			font-weight: 400;
+			font-size: 29px;
+			color: #ddd9d9;
+			line-height: 1.3;
+			&__red {
+				color: #f44336;
+			}
+	
+			&__bord {
+				color: #d4392e;
+			}
+		}
+
+		&__two {
+			margin-top: 20px;
+			font-weight: 400;
+			font-size: 29px;
+			color: #ddd9d9;
+			line-height: 1.3;
+	
+		}
+
+	}
+	
+}
+
+.povar {
+	background-color: #646a73;
+	max-width: 1440px;
+	margin: 0 auto;
+	border-radius: 40px;
+	// height: 672px;
+	
+	&__items {	
+		padding-top: 105px;
+		display: flex;
+		justify-content: space-between;
+
+		&__left {
+			padding-left: 70px;
+
+			&__title {
+				font-weight: 500;
+				font-size: 44px;
+				color: #ddd9d9;
+				text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+
+			}
+
+
+			&__text {
+				width: 756px;
+				margin-top: 40px;
+		
+
+				&__one {
+
+					font-weight: 400;
+					font-size: 28px;
+					line-height: 120%;
+					color: #ddd9d9;
+				}
+
+				&__two {
+					font-weight: 400;
+					font-size: 28px;
+					line-height: 120%;
+					color: #ddd9d9;
+
+				}
+			}
+
+		}
+
+		&__right {
+			padding-top: 40px;
+			padding-right: 105px;
+			width: 420px;
+			height: 566px;
+		}
+	}
+}
+
+.bronir {
+	display: flex;
+	max-width: 1440px;
+	margin: 121px auto;
+	justify-content: space-between;
+	
+	&__left {
+		display: flex;
+		flex-direction: column;
+		gap: 40px;
+		
+		&__title {
+			font-weight: 500;
+			font-size: 46px;
+			text-transform: uppercase;
+			color: #ddd9d9;
+			text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+		}
+
+
+		&__text {
+			font-weight: 400;
+			font-size: 29px;
+			color: #ddd9d9;
+
+		}
+
+		.button {
+			padding-top: 18px;
+			padding-bottom: 21px;
+
+			.btn {
+				font-weight: 400;
+				font-size: 28px;
+				color: #e4e3e3;
+				padding: 0 28px;
+				padding-top: 18px;
+				padding-bottom: 21px;
+				border: 2px solid #e4e3e3;
+				border-radius: 20px;
+				background: rgba(244, 67, 54, 0.22);
+				text-decoration: none;
+			}
+		}
+
+
+	}
+
+
+	&__right {
+		margin-top: 140px;
+		border-radius: 40px;
+		width: 819px;
+		height: 100%;
+	}
+}
+
+
+
+.kontakt {
+	background: url(../public/fone.png);
+	background-repeat:no-repeat;
+	&__items {
+		max-width: 1440px;
+		margin: 0 auto;
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-end;
+		padding: 145px 0;
+
+
+		&__left {
+			backdrop-filter: blur(30.600000381469727px);
+			box-shadow: inset 0 4px 4px 0 rgba(255, 255, 255, 0.15), 0 0 68px 0 rgba(0, 0, 0, 0.29);
+			background: rgba(0, 0, 0, 0.55);
+			border-radius: 29px;
+
+
+			.kon {
+				gap: 45px;
+				display: flex;
+				flex-direction: column;
+				width: 450px;
+				margin: 0 auto;
+				padding: 85px 0;
+				padding-left: 50px;
+				padding-right: 40px;
+
+
+				&__title {
+					font-weight: 500;
+					font-size: 37px;
+					color: #ddd9d9;
+					text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+				}
+
+
+				&__text {
+					font-weight: 400;
+					font-size: 27px;
+					line-height: 1.5;
+					line-height: 120%;
+					color: #ddd9d9;
+	
+					&__red {
+						color: #f44336;
+
+					}
+
+					&__row {
+						color: #d4392e;
+
+
+					}
+				}
+
+
+				&__dop {
+					font-weight: 400;
+					font-size: 27px;
+					line-height: 1.5;
+					line-height: 120%;
+					color: #ddd9d9;
+					
+				}
+			}
+		}
+
+		&__map {
+
+			.map {
+				border-radius: 29px;
+				width: 761px;
+				height: 450px;
+			}
+		}
+
+
+	}
+
+
+}
+
+
+
+.footer {
+	max-width: 1440px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 30px 0;
+
+	&__items {
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+
+		&__centr {
+			display: flex;
+			align-items: baseline;
+			.text {
+				font-weight: 500;
+				font-size: 29px;
+				text-align: center;
+				color: #f44336;
+
+				&__osn {
+					color: #ddd9d9;
+				}
+			}
+
+
+			.c {
+				font-weight: 700;
+				margin-left: 14px;
+				font-size: 22px;
+				color: #efefef;
+
+				&__year {
+
+					font-weight: 400;
+					font-size: 25px;
+
+				}
+			}
+		}
+
+		&__right {
+			margin-left: 38.7%;
+			display: flex;
+			gap: 26px;
+
+			.vk {
+				width: 22px;
+				height: 22px;
+			}
+
+			.podder {
+				width: 22px;
+				height: 22px;
+			}
+		}
+
+
+	}
+	
+
+}
+
+
+
+
+
+
+
+
+
+// media
+
+@media screen and (min-width:1350px) and (max-width:1600px) {
+
+	.countainer {
+		max-width: 1600px;
+
+		
+	
+	}
+	
+	
+	.header {
+	
+		&__items {
+			max-width: 1280px;
+			&__it {
+	
+	
+				.start {
+	
+					.logo {
+
+						&__osnov {
+							
+		
+						}
+		
+						&__tochk {
+			
+		
+						}
+		
+					}
+		
+					.item {
+					
+					}
+		
+					.item:last-child {
+					
+					}
+	
+				}
+				
+				.button {
+				
+	
+					.btn {
+					
+					}
+				}
+	
+	
+	
+			}
+		}
+	
+	}
+	
+	
+	.main {
+	
+	
+	
+		.main__slider {
+		
+			width: 1250px;
+			height: 775px;
+		}
+	
+	
+		 .slide {
+		
+		}
+	
+	
+	
+		.button {
+
+	
+			.btn {
+			
+			}
+		}
+	
+	
+	}
+	
+	.onas {
+	    max-width: 1280px;
+
+		&__title {
+	
+		}
+	
+		&__text {
+		    width: 957px;
+
+			&__one {
+			
+				&__red {
+
+				}
+		
+				&__bord {
+	
+				}
+			}
+	
+			&__two {
+			
+			}
+	
+		}
+		
+	}
+	
+	.povar {
+    max-width: 1280px;
+		
+		&__items {	
+		
+	
+			&__left {
+			
+	
+				&__title {
+				
+	
+				}
+	
+	
+				&__text {
+				    width: 615px;
+			
+	
+					&__one {
+	
+				
+					}
+	
+					&__two {
+			
+	
+					}
+				}
+	
+			}
+	
+			&__right {
+				width: 408px;
+				height: 553px;
+			}
+		}
+	}
+	
+	.bronir {
+		max-width: 1280px;
+		&__left {
+	
+			&__title {
+	
+			}
+	
+	
+			&__text {
+				width: 383px;
+	
+			}
+	
+			.button {
+		
+				.btn {
+				
+				}
+			}
+	
+	
+		}
+	
+	
+		&__right {
+		    width: 757px;
+		}
+	}
+	
+	
+	
+	.kontakt {
+
+		&__items {
+		
+			max-width: 1280px;
+	
+			&__left {
+		
+	
+	
+				.kon {
+			
+	
+					&__title {
+				
+					}
+	
+	
+					&__text {
+					
+		
+						&__red {
+				
+						}
+	
+						&__row {
+					
+	
+	
+						}
+					}
+	
+	
+					&__dop {
+					
+						
+					}
+				}
+			}
+	
+			&__map {
+	
+				.map {
+					width: 704px;
+					height: 436px;
+				}
+			}
+	
+	
+		}
+	
+	
+	}
+	
+	
+	
+	.footer {
+	    max-width: 1280px;
+	
+		&__items {
+
+	
+			&__centr {
+
+				.text {
+				
+	
+					&__osn {
+	
+					}
+				}
+	
+	
+				.c {
+				
+	
+					&__year {
+	
+				
+					}
+				}
+			}
+	
+			&__right {
+			    margin-left: 36.7%;
+				.vk {
+
+				}
+	
+				.podder {
+
+				}
+			}
+	
+	
+		}
+		
+	
+	}
+	
+	
+
+
+
+}
+
+@media screen and (min-width:1150px) and (max-width:1349px) {
+
+	.countainer {
+		max-width: 1349px;
+
+		
+	
+	}
+	
+	
+	.header {
+	
+		&__items {
+			max-width: 1024px;
+			&__it {
+	
+	
+				.start {
+	
+					.logo {
+						font-size: 35px;
+						margin-right: 91px;
+
+						&__osnov {
+							
+		
+						}
+		
+						&__tochk {
+			
+		
+						}
+		
+					}
+		
+					.item {
+						font-size: 21px;
+						margin-right: 41px;
+					}
+		
+					.item:last-child {
+					
+					}
+	
+				}
+				
+				.button {
+				
+	
+					.btn {
+					
+					}
+				}
+	
+	
+	
+			}
+		}
+	
+	}
+	
+	
+	.main {
+	
+	
+	
+		.main__slider {
+		
+			width: 1024px;
+			height: 723px;
+		}
+	
+	
+		 .slide {
+		
+		}
+	
+	
+	
+		.button {
+
+	
+			.btn {
+			
+			}
+		}
+	
+	
+	}
+	
+	.onas {
+        max-width: 1024px;
+		margin: 75px auto;
+		&__title {
+			font-size: 34px;
+		}
+	
+		&__text {
+			width: 787px;
+
+			&__one {
+				font-size: 22px;
+				&__red {
+
+				}
+		
+				&__bord {
+	
+				}
+			}
+	
+			&__two {
+				font-size: 22px;
+			}
+	
+		}
+		
+	}
+	
+	.povar {
+        max-width: 1024px;
+		
+		&__items {	
+		    padding-top: 70px;
+	
+			&__left {
+			    padding-left: 45px;
+	
+				&__title {
+				    font-size: 34px;
+	
+				}
+	
+	
+				&__text {
+					width: 561px;
+	
+	
+					&__one {
+						font-size: 22px;
+				
+					}
+	
+					&__two {
+						font-size: 22px;
+						margin-top: 5px;					
+	
+					}
+				}
+	
+			}
+	
+			&__right {
+				width: 357px;
+				height: 483px;
+				padding-top: 20px;
+				padding-right: 45px;
+			}
+		}
+	}
+	
+	.bronir {
+        max-width: 1024px;
+		&__left {
+	
+			&__title {
+				font-size: 35px;
+			}
+	
+	
+			&__text {
+				width: 383px;
+				font-size: 23px;
+			}
+	
+			.button {
+		
+				.btn {
+					padding: 0 23px;
+					font-size: 24px;
+				    padding-top: 15px;
+					padding-bottom: 20px;
+				}
+			}
+	
+	
+		}
+	
+	
+		&__right {
+		    width: 598px;
+			margin-top: 105px;
+		}
+	}
+	
+	
+	
+	.kontakt {
+
+		&__items {
+		    padding: 120px 0;
+			max-width: 1024px;
+	
+			&__left {
+		
+	
+	
+				.kon {
+					gap: 40px;
+					width: 390px;
+					padding: 80px 0;
+					padding-left: 40px;
+					padding-right: 40px;
+	
+					&__title {
+						font-size: 33px;
+					}
+	
+	
+					&__text {
+						font-size: 25px;
+		
+						&__red {
+				
+						}
+	
+						&__row {
+					
+	
+	
+						}
+					}
+	
+	
+					&__dop {
+						font-size: 25px;
+						
+					}
+				}
+			}
+	
+			&__map {
+	
+				.map {
+					width: 520px;
+					height: 350px;
+				}
+			}
+	
+	
+		}
+	
+	
+	}
+	
+	
+	
+	.footer {
+        max-width: 1024px;
+	
+		&__items {
+
+	
+			&__centr {
+
+				.text {
+				
+	
+					&__osn {
+	
+					}
+				}
+	
+	
+				.c {
+				
+	
+					&__year {
+	
+				
+					}
+				}
+			}
+	
+			&__right {
+			
+				.vk {
+
+				}
+	
+				.podder {
+
+				}
+			}
+	
+	
+		}
+		
+	
+	}
+	
+	
+
+
+
+}
+
+@media screen and (min-width:1024px) and (max-width:1149px) {
+
+	.countainer {
+		max-width: 1149px;
+
+		
+	
+	}
+	
+	
+	.header {
+	
+		&__items {
+			max-width: 900px;
+			
+			&__it {
+	
+	
+				.start {
+	
+					.logo {
+						font-size: 33px;
+						margin-right: 67px;
+
+						&__osnov {
+							
+		
+						}
+		
+						&__tochk {
+			
+		
+						}
+		
+					}
+		
+					.item {
+						font-size: 20px;
+						margin-right: 34px;
+					}
+		
+					.item:last-child {
+					
+					}
+	
+				}
+				
+				.button {
+				
+	
+					.btn {
+					    padding-top: 10px;
+						padding-bottom: 13px;
+					}
+				}
+	
+	
+	
+			}
+		}
+	
+	}
+	
+	
+	.main {
+	
+	
+	
+		.main__slider {
+		
+			width: 900px;
+			height: 630px;
+		}
+	
+	
+		 .slide {
+		
+		}
+	
+	
+	
+		.button {
+
+	
+			.btn {
+			
+			}
+		}
+	
+	
+	}
+	
+	.onas {
+		max-width: 900px;
+		margin: 75px auto;
+		&__title {
+			font-size: 34px;
+		}
+	
+		&__text {
+			width: 705px;
+
+			&__one {
+				font-size: 22px;
+				&__red {
+
+				}
+		
+				&__bord {
+	
+				}
+			}
+	
+			&__two {
+				font-size: 22px;
+			}
+	
+		}
+		
+	}
+	
+	.povar {
+		max-width: 900px;
+		
+		&__items {	
+		    padding-top: 70px;
+	
+			&__left {
+			    padding-left: 45px;
+	
+				&__title {
+				    font-size: 33px;
+	
+				}
+	
+	
+				&__text {
+					width: 455px;
+	
+	
+					&__one {
+						font-size: 22px;
+				
+					}
+	
+					&__two {
+						font-size: 22px;
+						margin-top: 7px;			
+	
+					}
+				}
+	
+			}
+	
+			&__right {
+				width: 331px;
+				height: 438px;
+				padding-top: 20px;
+				padding-right: 45px;
+			}
+		}
+	}
+	
+	.bronir {
+		max-width: 900px;
+
+		&__left {
+	    	gap: 25px;
+			&__title {
+				font-size: 33px;
+			}
+	
+	
+			&__text {
+				width: 301px;
+				font-size: 23px;
+			}
+	
+			.button {
+		
+				.btn {
+					padding: 0 23px;
+					font-size: 24px;
+					padding-top: 13px;
+					padding-bottom: 17px;
+				}
+			}
+	
+	
+		}
+	
+	
+		&__right {
+			width: 555px;
+			margin-top: 86px;
+		}
+	}
+	
+	
+	
+	.kontakt {
+		background: url(../public/foneq.png);
+		&__items {
+		    padding: 112px 0;
+			max-width: 900px;
+	
+			&__left {
+		
+	
+	
+				.kon {
+					gap: 35px;
+					width: 390px;
+					padding: 70px 0;
+					padding-left: 35px;
+					padding-right: 10px;
+	
+					&__title {
+						font-size: 33px;
+					}
+	
+	
+					&__text {
+						font-size: 24px;
+		
+						&__red {
+				
+						}
+	
+						&__row {
+					
+	
+	
+						}
+					}
+	
+	
+					&__dop {
+						font-size: 24px;
+						
+					}
+				}
+			}
+	
+			&__map {
+	
+				.map {
+					width: 447px;
+					height: 300px;
+				}
+			}
+	
+	
+		}
+	
+	
+	}
+	
+	
+	
+	.footer {
+		max-width: 900px;
+	
+		&__items {
+
+	
+			&__centr {
+
+				.text {
+				
+	
+					&__osn {
+	
+					}
+				}
+	
+	
+				.c {
+				
+	
+					&__year {
+	
+				
+					}
+				}
+			}
+	
+			&__right {
+			    margin-left: 32.7%;
+				.vk {
+
+				}
+	
+				.podder {
+
+				}
+			}
+	
+	
+		}
+		
+	
+	}
+	
+	
+
+
+
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+
+	.countainer {
+		max-width: 1023px;
+
+		
+	
+	}
+	
+	
+	.header {
+	
+		&__items {
+			max-width: 695px;
+			
+			&__it {
+	
+	
+				.start {
+	
+					.logo {
+						font-size: 29px;
+						margin-right: 55px;
+
+						&__osnov {
+							
+		
+						}
+		
+						&__tochk {
+			
+		
+						}
+		
+					}
+		
+					.item {
+						font-size: 18px;
+						margin-right: 24px;
+					}
+		
+					.item:last-child {
+					
+					}
+	
+				}
+				
+				.button {
+				
+	
+					.btn {
+						padding-top: 9px;
+						font-size: 16px;
+						border-radius: 19px;
+						padding-bottom: 11px;
+					}
+				}
+	
+	
+	
+			}
+		}
+	
+	}
+	
+	
+	.main {
+	
+	
+	
+		.main__slider {
+		
+			width: 695px;
+			height: 480px;
+		
+		}
+	
+	
+		 .slide {
+		
+		}
+	
+	
+	
+		.button {
+
+	
+			.btn {
+				border-radius: 18px;
+				font-size: 16px;
+			}
+		}
+	
+	
+	}
+	
+	.onas {
+		max-width: 695px;
+		margin: 55px auto;
+
+		&__title {
+			font-size: 30px;
+		}
+	
+		&__text {
+			width: 530px;
+
+			&__one {
+        		font-size: 20px;
+				&__red {
+
+				}
+		
+				&__bord {
+	
+				}
+			}
+	
+			&__two {
+				font-size: 20px;
+			}
+	
+		}
+		
+	}
+	
+	.povar {
+		max-width: 695px;
+		
+		&__items {	
+		    padding-top: 55px;
+	
+			&__left {
+				padding-left: 25px;
+	
+				&__title {
+				    font-size: 30px;
+	
+				}
+	
+	
+				&__text {
+					width: 377px;
+					margin-top: 25px;
+	
+					&__one {
+						font-size: 18px;
+				
+					}
+	
+					&__two {
+						font-size: 18px;
+						margin-top: 7px;			
+	
+					}
+				}
+	
+			}
+	
+			&__right {
+				width: 273px;
+				height: 386px;
+				padding-top: 20px;
+				padding-right: 45px;
+			}
+		}
+	}
+	
+	.bronir {
+		max-width: 695px;
+		margin: 90px auto;
+		&__left {
+	    	gap: 25px;
+			&__title {
+				font-size: 30px;
+			}
+	
+	
+			&__text {
+				width: 266px;
+				font-size: 22px;
+			}
+	
+			.button {
+		
+				.btn {
+					padding: 0 23px;
+					font-size: 17px;
+					padding-top: 13px;
+					padding-bottom: 17px;
+					border-radius: 15px;
+				}
+			}
+	
+	
+		}
+	
+	
+		&__right {
+			border-radius: 28px;
+			width: 415px;
+			margin-top: 81px;
+		}
+	}
+	
+	
+	
+	.kontakt {
+		background: url(../public/foneq.png);
+
+		&__items {
+			padding: 90px 0;
+			max-width: 695px;
+	
+			&__left {
+				border-radius: 22px;
+	
+	
+				.kon {
+					gap: 35px;
+					width: 288px;
+					padding: 45px 0;
+					padding-left: 30px;
+					padding-right: 10px;
+	
+					&__title {
+						font-size: 29px;
+					}
+	
+	
+					&__text {
+						font-size: 19px;
+		
+						&__red {
+				
+						}
+	
+						&__row {
+					
+	
+	
+						}
+					}
+	
+	
+					&__dop {
+						font-size: 20px;
+						
+					}
+				}
+			}
+	
+			&__map {
+	
+				.map {
+					width: 351px;
+					height: 252px;
+					border-radius: 18px;
+				}
+			}
+	
+	
+		}
+	
+	
+	}
+	
+	
+	
+	.footer {
+		max-width: 695px;
+		padding: 25px 0;
+
+		&__items {
+
+	
+			&__centr {
+
+				.text {
+				
+	
+					&__osn {
+	
+					}
+				}
+	
+	
+				.c {
+				
+	
+					&__year {
+	
+				
+					}
+				}
+			}
+	
+			&__right {
+				margin-left: 28.7%;
+				.vk {
+
+				}
+	
+				.podder {
+
+				}
+			}
+	
+	
+		}
+		
+	
+	}
+	
+	
+
+
+
+}
+
+@media screen and (min-width:640px) and (max-width:767px) {
+
+	.countainer {
+		max-width: 767px;
+
+		
+	
+	}
+	
+	
+	.header {
+	
+		&__items {
+			max-width: 575px;
+			
+			&__it {
+	
+	
+				.start {
+	
+					.logo {
+						font-size: 25px;
+						margin-right: 55px;
+
+						&__osnov {
+							
+		
+						}
+		
+						&__tochk {
+			
+		
+						}
+		
+					}
+		
+					.item {
+						font-size: 16px;
+						margin-right: 24px;
+					}
+		
+					.item:last-child {
+					
+					}
+	
+				}
+				
+				.button {
+				
+	
+					.btn {
+						padding-top: 9px;
+						font-size: 15px;
+						border-radius: 15px;
+						padding-bottom: 9px;
+					}
+				}
+	
+	
+	
+			}
+		}
+	
+	}
+	
+	
+	.main {
+	
+	
+	
+		.main__slider {
+		
+			width: 575px;
+			height: 400px;
+		
+		}
+	
+	
+		 .slide {
+		    border-radius: 20px;
+		}
+	
+	
+	
+		.button {
+			top: -50px;
+	
+			.btn {
+				border-radius: 13px;
+				font-size: 15px;
+				padding: 0px 22px;
+				padding-top: 11px;
+				padding-bottom: 12px;
+
+			}
+		}
+	
+	
+	}
+	
+	.onas {
+        max-width: 575px;
+		margin: 40px auto;
+
+		&__title {
+			font-size: 25px;
+			margin-bottom: 30px;
+		}
+	
+		&__text {
+			width: 485px;
+
+			&__one {
+        		font-size: 18px;
+				
+				&__red {
+
+				}
+		
+				&__bord {
+	
+				}
+			}
+	
+			&__two {
+        		font-size: 18px;
+				
+			}
+	
+		}
+		
+	}
+	
+	.povar {
+        max-width: 575px;
+		
+		&__items {	
+		    padding-top: 55px;
+			flex-direction: column;
+	
+			&__left {
+				padding-left: 25px;
+	
+				&__title {
+				    font-size: 26px;
+	
+				}
+	
+	
+				&__text {
+					width: 477px;
+					margin-top: 25px;
+	
+					&__one {
+						font-size: 18px;
+				
+					}
+	
+					&__two {
+						font-size: 18px;
+						margin-top: 7px;			
+	
+					}
+				}
+	
+			}
+	
+			&__right {
+				margin: 0 auto;
+				width: 300px;
+				height: 386px;
+				padding-top: 20px;
+				padding-right: 0px;
+			}
+		}
+	}
+	
+	.bronir {
+        max-width: 575px;
+		margin: 90px auto;
+		&__left {
+	    	gap: 25px;
+			&__title {
+				font-size: 30px;
+			}
+	
+	
+			&__text {
+				width: 266px;
+				font-size: 21px;
+			}
+	
+			.button {
+		
+				.btn {
+					padding: 0 23px;
+					font-size: 17px;
+					padding-top: 13px;
+					padding-bottom: 17px;
+					border-radius: 15px;
+				}
+			}
+	
+	
+		}
+	
+	
+		&__right {
+			border-radius: 28px;
+	        width: 324px;
+			margin-top: 81px;
+		}
+	}
+	
+	
+	
+	.kontakt {
+		background: url(../public/foneww.png);
+
+		&__items {
+			padding: 70px 0;
+			max-width: 575px;
+			flex-direction: column;
+			align-items: center;
+	
+			&__left {
+				border-radius: 22px;
+	
+	
+				.kon {
+					gap: 35px;
+					width: 375px;
+					padding: 45px 0;
+					padding-left: 30px;
+					padding-right: 10px;
+	
+					&__title {
+						font-size: 29px;
+					}
+	
+	
+					&__text {
+						font-size: 21px;
+		
+						&__red {
+				
+						}
+	
+						&__row {
+					
+	
+	
+						}
+					}
+	
+	
+					&__dop {
+						font-size: 21px;
+						
+					}
+				}
+			}
+	
+			&__map {
+				margin-top: 20px;
+
+				.map {
+					width: 440px;
+					height: 280px;
+					border-radius: 18px;
+				}
+			}
+	
+	
+		}
+	
+	
+	}
+	
+	
+	
+	.footer {
+        max-width: 575px;
+        padding: 20px 0;
+    
+
+		&__items {
+
+	
+			&__centr {
+
+				.text {
+					font-size: 26px;
+	
+					&__osn {
+	
+					}
+				}
+	
+	
+				.c {
+				    font-size: 24px;
+	
+					&__year {
+	
+				
+					}
+				}
+			}
+	
+			&__right {
+				margin-left: 23.7%;
+
+				.vk {
+
+				}
+	
+				.podder {
+
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width:525px) and (max-width:639px) {
+
+	.countainer {
+		max-width: 639px;
+
+	}
+	
+	
+	.header {
+	
+		&__items {
+			max-width: 475px;
+			
+			&__it {
+	
+	
+				.start {
+	
+					.logo {
+						font-size: 25px;
+				        margin-right: 37px;
+
+						&__osnov {
+							
+		
+						}
+		
+						&__tochk {
+			
+		
+						}
+		
+					}
+		
+					.item {
+						font-size: 14px;
+						margin-right: 16px;
+					}
+		
+					.item:last-child {
+					
+					}
+	
+				}
+				
+				.button {
+				    margin-top: 0px;
+	
+					.btn {
+						padding: 0px 18px;
+						padding-top: 8px;
+						font-size: 12px;
+						border-radius: 11px;
+						padding-bottom: 8px;
+					}
+				}
+	
+	
+	
+			}
+		}
+	
+	}
+	
+	
+	.main {
+	
+		margin-top: 30px;
+	
+		.main__slider {
+		
+			width: 475px;
+			height: 335px;
+		
+		}
+	
+	
+		 .slide {
+		    border-radius: 20px;
+		}
+	
+	
+	
+		.button {
+			top: -50px;
+	
+			.btn {
+				border-radius: 13px;
+				font-size: 15px;
+				padding: 0px 22px;
+				padding-top: 11px;
+				padding-bottom: 12px;
+
+			}
+		}
+	
+	
+	}
+	
+	.onas {
+		max-width: 475px;
+		margin: 35px auto;
+
+		&__title {
+			font-size: 25px;
+			margin-bottom: 30px;
+		}
+	
+		&__text {
+			width: 420px;
+
+			&__one {
+        		font-size: 18px;
+				
+				&__red {
+
+				}
+		
+				&__bord {
+	
+				}
+			}
+	
+			&__two {
+        		font-size: 18px;
+				margin-top: 10px;
+			}
+	
+		}
+		
+	}
+	
+	.povar {
+		max-width: 475px;
+		
+		&__items {	
+		    padding-top: 35px;
+			flex-direction: column;
+	
+			&__left {
+				padding-left: 25px;
+	
+				&__title {
+				    font-size: 26px;
+	
+				}
+	
+	
+				&__text {
+					width: 415px;
+					margin-top: 25px;
+	
+					&__one {
+						font-size: 18px;
+				
+					}
+	
+					&__two {
+						font-size: 18px;
+						margin-top: 7px;			
+	
+					}
+				}
+	
+			}
+	
+			&__right {
+				margin: 0 auto;
+				width: 300px;
+				height: 386px;
+				padding-top: 20px;
+				padding-right: 0px;
+			}
+		}
+	}
+	
+	.bronir {
+		max-width: 475px;
+		margin: 60px auto;
+		&__left {
+	    	gap: 25px;
+			&__title {
+				font-size: 30px;
+				width: 350px;
+			}
+	
+	
+			&__text {
+				width: 403px;
+				font-size: 21px;
+			}
+	
+			.button {
+		
+				.btn {
+					padding: 0 23px;
+					font-size: 17px;
+					padding-top: 13px;
+					padding-bottom: 17px;
+					border-radius: 15px;
+				}
+			}
+	
+	
+		}
+	
+	
+		&__right {
+			display: none;
+			border-radius: 28px;
+	        width: 324px;
+			margin-top: 81px;
+		}
+	}
+	
+	
+	
+	.kontakt {
+		background: url(../public/foneww.png);
+
+		&__items {
+			padding: 60px 0;
+			max-width: 475px;
+			flex-direction: column;
+			align-items: center;
+	
+			&__left {
+				border-radius: 22px;
+	
+	
+				.kon {
+					gap: 35px;
+					width: 375px;
+					padding: 45px 0;
+					padding-left: 30px;
+					padding-right: 10px;
+	
+					&__title {
+						font-size: 29px;
+					}
+	
+	
+					&__text {
+						font-size: 21px;
+		
+						&__red {
+				
+						}
+	
+						&__row {
+					
+	
+	
+						}
+					}
+	
+	
+					&__dop {
+						font-size: 21px;
+						
+					}
+				}
+			}
+	
+			&__map {
+				margin-top: 20px;
+
+				.map {
+					width: 430px;
+					height: 280px;
+					border-radius: 18px;
+				}
+			}
+	
+	
+		}
+	
+	
+	}
+	
+	
+	
+	.footer {
+		max-width: 475px;
+        padding: 20px 0;
+    
+
+		&__items {
+
+	
+			&__centr {
+
+				.text {
+					font-size: 25px;
+	
+					&__osn {
+	
+					}
+				}
+	
+	
+				.c {
+					font-size: 24px;
+	
+					&__year {
+	
+				
+					}
+				}
+			}
+	
+			&__right {
+		        margin-left: 17.1%;
+
+				.vk {
+					width: 20px;
+					height: 20px;
+				}
+	
+				.podder {
+					width: 20px;
+					height: 20px;
+				}
+			}
+	
+	
+		}
+		
+	
+	}
+	
+	
+
+
+
+}
+
+@media screen and (min-width:467px) and (max-width:524px) {
+
+	.countainer {
+		max-width: 524px;
+
+	}
+	
+	
+	.header {
+		background-color: #3A3F45;
+		display: flex;
+		justify-content: flex-end;
+
+		&__items {
+			max-width: 475px;	
+            display: none;
+			flex-direction: column;
+			position: fixed;
+            height: 100%;
+            width: 100%;
+            inset: 0px;
+            z-index: 50;
+            overflow-y: auto;
+            padding: 50px 0px;
+            background: #646A73;
+
+			&__it {
+	    		display: flex;
+                flex-direction: column;
+               	justify-content: center;
+	
+				.start {
+		    		display: flex;
+                	flex-direction: column;
+					gap: 20px;
+
+					.logo {
+						display: none;
+						font-size: 35px;
+				        margin-right: 37px;
+
+						&__osnov {
+							
+		
+						}
+		
+						&__tochk {
+			
+		
+						}
+		
+					}
+		
+					.item {
+						font-size: 24px;
+						margin-right: 16px;
+						margin-left: 0px;
+						margin-right: 0px;
+					}
+		
+					.item:last-child {
+					
+					}
+	
+				}
+				
+				.button {
+					margin-top: 20px;
+	
+					.btn {
+						border: none;
+						padding: 0px;
+						font-size: 24px;
+						border-radius: 11px;
+				
+					}
+				}
+	
+	
+	
+			}
+		}
+		
+		.burger {
+
+			display: block;
+		}
+	}
+	
+	
+	.main {
+	
+		margin-top: 0px;
+	
+		.main__slider {
+		
+			width: 425px;
+			height: 286px;
+		
+		}
+	
+	
+		 .slide {
+		    border-radius: 20px;
+		}
+	
+	
+	
+		.button {
+			top: -50px;
+	
+			.btn {
+				border-radius: 25px;
+				font-size: 12px;
+				padding: 0px 19px;
+				padding-top: 11px;
+				padding-bottom: 12px;
+				background: rgba(132, 132, 132, 0.21);
+
+			}
+		}
+	
+	
+	}
+	
+	.onas {
+		max-width: 425px;
+		margin: 35px auto;
+		margin-top: 25px;
+
+		&__title {
+			font-size: 22px;
+			margin-bottom: 30px;
+		}
+	
+		&__text {
+			width: 377px;
+
+			&__one {
+        		font-size: 15px;
+				
+				&__red {
+
+				}
+		
+				&__bord {
+	
+				}
+			}
+	
+			&__two {
+        		font-size: 15px;
+				margin-top: 10px;
+			}
+	
+		}
+		
+	}
+	
+	.povar {
+		max-width: 425px;
+		
+		&__items {	
+		    padding-top: 35px;
+			flex-direction: column;
+	
+			&__left {
+				padding-left: 25px;
+	
+				&__title {
+				    font-size: 22px;
+	
+				}
+	
+	
+				&__text {
+					width: 380px;
+					margin-top: 25px;
+	
+					&__one {
+						font-size: 15px;
+				
+					}
+	
+					&__two {
+						font-size: 15px;
+						margin-top: 7px;			
+	
+					}
+				}
+	
+			}
+	
+			&__right {
+				margin: 0 auto;
+				width: 285px;
+				height: 360px;
+				padding-top: 20px;
+				padding-right: 0px;
+			}
+		}
+	}
+	
+	.bronir {
+		max-width: 415px;
+		margin: 60px auto;
+		&__left {
+	    	gap: 25px;
+			&__title {
+				font-size: 26px;
+				width: 350px;
+			}
+	
+	
+			&__text {
+				width: 403px;
+				font-size: 19px;
+			}
+	
+			.button {
+		
+				.btn {
+					padding: 0 23px;
+					font-size: 17px;
+					padding-top: 13px;
+					padding-bottom: 16px;
+					border-radius: 25px;
+				}
+			}
+	
+	
+		}
+	
+	
+		&__right {
+			display: none;
+			border-radius: 28px;
+	        width: 324px;
+			margin-top: 81px;
+		}
+	}
+	
+	
+	
+	.kontakt {
+		background: url(../public/foneww.png);
+
+		&__items {
+			padding: 60px 0;
+			max-width: 425px;
+			flex-direction: column;
+			align-items: center;
+	
+			&__left {
+				border-radius: 22px;
+	
+	
+				.kon {
+					gap: 35px;
+					width: 340px;
+					padding: 45px 0;
+					padding-left: 30px;
+					padding-right: 10px;
+	
+					&__title {
+						font-size: 29px;
+					}
+	
+	
+					&__text {
+						font-size: 19px;
+		
+						&__red {
+				
+						}
+	
+						&__row {
+					
+	
+	
+						}
+					}
+	
+	
+					&__dop {
+						font-size: 19px;
+						
+					}
+				}
+			}
+	
+			&__map {
+				margin-top: 20px;
+
+				.map {
+					width: 380px;
+					height: 260px;
+					border-radius: 18px;
+				}
+			}
+	
+	
+		}
+	
+	
+	}
+	
+	
+	
+	.footer {
+		max-width: 425px;
+        padding: 20px 0;
+    
+
+		&__items {
+
+	
+			&__centr {
+
+				.text {
+					font-size: 25px;
+	
+					&__osn {
+
+					}
+				}
+	
+	
+				.c {
+					font-size: 22px;
+	
+					&__year {
+						font-size: 22px;
+				
+					}
+				}
+			}
+	
+			&__right {
+		        margin-left: 15.1%;
+
+				.vk {
+					width: 20px;
+					height: 20px;
+				}
+	
+				.podder {
+					width: 20px;
+					height: 20px;
+				}
+			}
+	
+	
+		}
+		
+	
+	}
+	
+	
+
+
+
+}
+
+@media screen and (min-width:390px) and (max-width:466px) {
+
+	.countainer {
+		max-width: 466px;
+
+	}
+	
+	
+	.header {
+		background-color: #3A3F45;
+		display: flex;
+		justify-content: flex-end;
+
+		&__items {
+			max-width: 475px;	
+            display: none;
+			flex-direction: column;
+			position: fixed;
+            height: 100%;
+            width: 100%;
+            inset: 0px;
+            z-index: 50;
+            overflow-y: auto;
+            padding: 50px 0px;
+            background: #646A73;
+
+			&__it {
+	    		display: flex;
+                flex-direction: column;
+               	justify-content: center;
+	
+				.start {
+		    		display: flex;
+                	flex-direction: column;
+					gap: 20px;
+
+					.logo {
+						display: none;
+						font-size: 35px;
+				        margin-right: 37px;
+
+						&__osnov {
+							
+		
+						}
+		
+						&__tochk {
+			
+		
+						}
+		
+					}
+		
+					.item {
+						font-size: 20px;
+						margin-right: 16px;
+						margin-left: 0px;
+						margin-right: 0px;
+					}
+		
+					.item:last-child {
+					
+					}
+	
+				}
+				
+				.button {
+					margin-top: 20px;
+	
+					.btn {
+						border: none;
+						padding: 0px;
+						font-size: 20px;
+						border-radius: 11px;
+				
+					}
+				}
+	
+	
+	
+			}
+		}
+		
+		.burger {
+
+			display: block;
+		}
+	}
+	
+	
+	.main {
+	
+		margin-top: 0px;
+	
+		.main__slider {
+		
+			width: 350px;
+			height: 238px;
+		
+		}
+	
+	
+		 .slide {
+		    border-radius: 20px;
+		}
+	
+	
+	
+		.button {
+			top: -40px;
+	
+			.btn {
+				border-radius: 25px;
+				font-size: 10px;
+				padding: 0px 11px;
+				padding-top: 7px;
+				padding-bottom: 9px;
+				background: rgba(132, 132, 132, 0.21);
+
+			}
+		}
+	
+	
+	}
+	
+	.onas {
+		max-width: 340px;
+		margin: 35px auto;
+		margin-top: 25px;
+
+		&__title {
+			font-size: 17px;
+			margin-bottom: 30px;
+		}
+	
+		&__text {
+			width: 335px;
+
+			&__one {
+				font-size: 14px;
+				
+				&__red {
+
+				}
+		
+				&__bord {
+	
+				}
+			}
+	
+			&__two {
+				font-size: 14px;
+				margin-top: 10px;
+			}
+	
+		}
+		
+	}
+	
+	.povar {
+		max-width: 340px;
+		
+		&__items {	
+		    padding-top: 30px;
+			flex-direction: column;
+	
+			&__left {
+				padding-left: 15px;
+	
+				&__title {
+				    font-size: 18px;
+	
+				}
+	
+	
+				&__text {
+					width: 308px;
+					margin-top: 25px;
+	
+					&__one {
+						font-size: 15px;
+				
+					}
+	
+					&__two {
+						font-size: 15px;
+						margin-top: 7px;			
+	
+					}
+				}
+	
+			}
+	
+			&__right {
+				margin: 0 auto;
+				width: 207px;
+				height: 270px;
+				padding-top: 20px;
+				padding-right: 0px;
+			}
+		}
+	}
+	
+	.bronir {
+		max-width: 340px;
+		margin: 60px auto;
+		&__left {
+	    	gap: 15px;
+
+			&__title {
+				font-size: 21px;
+				width: 256px;
+			}
+	
+	
+			&__text {
+				width: 315px;
+				font-size: 17px;
+			}
+	
+			.button {
+		
+				.btn {
+					padding: 0 23px;
+					font-size: 15px;
+					padding-top: 9px;
+					padding-bottom: 12px;
+					border-radius: 25px;
+				}
+			}
+	
+	
+		}
+	
+	
+		&__right {
+			display: none;
+			border-radius: 28px;
+	        width: 324px;
+			margin-top: 81px;
+		}
+	}
+	
+	
+	
+	.kontakt {
+		background: url(../public/foner.png);
+
+		&__items {
+			padding: 60px 0;
+			max-width: 340px;
+			flex-direction: column;
+			align-items: center;
+	
+			&__left {
+				border-radius: 22px;
+	
+	
+				.kon {
+					gap: 35px;
+					width: 280px;
+					padding: 45px 0;
+					padding-left: 25px;
+					padding-right: 10px;
+	
+					&__title {
+						font-size: 21px;
+					}
+	
+	
+					&__text {
+						font-size: 18px;
+		
+						&__red {
+				
+						}
+	
+						&__row {
+					
+	
+	
+						}
+					}
+	
+	
+					&__dop {
+						font-size: 18px;
+						
+					}
+				}
+			}
+	
+			&__map {
+				margin-top: 20px;
+
+				.map {
+					width: 323px;
+					height: 215px;
+					border-radius: 18px;
+				}
+			}
+	
+	
+		}
+	
+	
+	}
+	
+	
+	
+	.footer {
+		max-width: 290px;
+        padding: 20px 0;
+    
+
+		&__items {
+
+	
+			&__centr {
+
+				.text {
+					font-size: 19px;
+	
+					&__osn {
+
+					}
+				}
+	
+	
+				.c {
+					font-size: 15px;
+					margin-left: 8px;
+	
+					&__year {
+						font-size: 17px;
+				
+					}
+				}
+			}
+	
+			&__right {
+				margin-left: 13.1%;
+				gap: 20px;
+				.vk {
+					width: 15px;
+					height: 15px;
+				}
+	
+				.podder {
+					width: 15px;
+					height: 15px;
+				}
+			}
+	
+	
+		}
+		
+	
+	}
+	
+	
+
+
+
+}
+
+@media screen and (min-width:320px) and (max-width:389px) {
+
+	.countainer {
+		max-width: 466px;
+
+	}
+	
+	
+	.header {
+		background-color: #3A3F45;
+		display: flex;
+		justify-content: flex-end;
+
+		&__items {
+			max-width: 475px;	
+            display: none;
+			flex-direction: column;
+			position: fixed;
+            height: 100%;
+            width: 100%;
+            inset: 0px;
+            z-index: 50;
+            overflow-y: auto;
+            padding: 50px 0px;
+            background: #646A73;
+
+			&__it {
+	    		display: flex;
+                flex-direction: column;
+               	justify-content: center;
+	
+				.start {
+		    		display: flex;
+                	flex-direction: column;
+					gap: 20px;
+
+					.logo {
+						display: none;
+						font-size: 35px;
+				        margin-right: 37px;
+
+						&__osnov {
+							
+		
+						}
+		
+						&__tochk {
+			
+		
+						}
+		
+					}
+		
+					.item {
+						font-size: 20px;
+						margin-right: 16px;
+						margin-left: 0px;
+						margin-right: 0px;
+					}
+		
+					.item:last-child {
+					
+					}
+	
+				}
+				
+				.button {
+					margin-top: 20px;
+	
+					.btn {
+						border: none;
+						padding: 0px;
+						font-size: 20px;
+						border-radius: 11px;
+				
+					}
+				}
+	
+	
+	
+			}
+		}
+		
+		.burger {
+
+			display: block;
+		}
+	}
+	
+	
+	.main {
+	
+		margin-top: 0px;
+	
+		.main__slider {
+		
+			width: 300px;
+			height: 228px;
+		
+		}
+	
+	
+		 .slide {
+		    border-radius: 20px;
+		}
+	
+	
+	
+		.button {
+			top: -40px;
+	
+			.btn {
+				border-radius: 25px;
+				font-size: 10px;
+				padding: 0px 11px;
+				padding-top: 7px;
+				padding-bottom: 9px;
+				background: rgba(132, 132, 132, 0.21);
+
+			}
+		}
+	
+	
+	}
+	
+	.onas {
+		max-width: 290px;
+		margin: 35px auto;
+		margin-top: 25px;
+
+		&__title {
+			font-size: 15px;
+			margin-bottom: 30px;
+		}
+	
+		&__text {
+			width: 290px;
+
+			&__one {
+				font-size: 13px;
+				
+				&__red {
+
+				}
+		
+				&__bord {
+	
+				}
+			}
+	
+			&__two {
+		        font-size: 13px;
+				margin-top: 10px;
+			}
+	
+		}
+		
+	}
+	
+	.povar {
+		max-width: 300px;
+		
+		&__items {	
+		    padding-top: 30px;
+			flex-direction: column;
+	
+			&__left {
+				padding-left: 15px;
+	
+				&__title {
+				    font-size: 15px;
+	
+				}
+	
+	
+				&__text {
+					width: 260px;
+					margin-top: 25px;
+	
+					&__one {
+						font-size: 13px;
+				
+					}
+	
+					&__two {
+						font-size: 13px;
+						margin-top: 7px;			
+	
+					}
+				}
+	
+			}
+	
+			&__right {
+				margin: 0 auto;
+				width: 207px;
+				height: 270px;
+				padding-top: 20px;
+				padding-right: 0px;
+			}
+		}
+	}
+	
+	.bronir {
+		max-width: 290px;
+		margin: 60px auto;
+		&__left {
+	    	gap: 15px;
+			&__title {
+				font-size: 18px;
+				width: 250px;
+			}
+	
+	
+			&__text {
+				width: 240px;
+				font-size: 14px;
+			}
+	
+			.button {
+		
+				.btn {
+					padding: 0 23px;
+					font-size: 12px;
+					padding-top: 9px;
+					padding-bottom: 12px;
+					border-radius: 25px;
+				}
+			}
+	
+	
+		}
+	
+	
+		&__right {
+			display: none;
+			border-radius: 28px;
+	        width: 324px;
+			margin-top: 81px;
+		}
+	}
+	
+	
+	
+	.kontakt {
+		background: url(../public/foner.png);
+
+		&__items {
+			padding: 60px 0;
+			max-width: 300px;
+			flex-direction: column;
+			align-items: center;
+	
+			&__left {
+				border-radius: 22px;
+	
+	
+				.kon {
+					gap: 35px;
+					width: 250px;
+					padding: 45px 0;
+					padding-left: 30px;
+					padding-right: 10px;
+	
+					&__title {
+						font-size: 18px;
+					}
+	
+	
+					&__text {
+						font-size: 14px;
+		
+						&__red {
+				
+						}
+	
+						&__row {
+					
+	
+	
+						}
+					}
+	
+	
+					&__dop {
+						font-size: 14px;
+						
+					}
+				}
+			}
+	
+			&__map {
+				margin-top: 20px;
+
+				.map {
+					width: 290px;
+					height: 200px;
+					border-radius: 18px;
+				}
+			}
+	
+	
+		}
+	
+	
+	}
+	
+	
+	
+	.footer {
+		max-width: 290px;
+        padding: 20px 0;
+    
+
+		&__items {
+
+	
+			&__centr {
+
+				.text {
+					font-size: 19px;
+	
+					&__osn {
+
+					}
+				}
+	
+	
+				.c {
+					font-size: 15px;
+					margin-left: 8px;
+	
+					&__year {
+						font-size: 17px;
+				
+					}
+				}
+			}
+	
+			&__right {
+				margin-left: 13.1%;
+				gap: 20px;
+				.vk {
+					width: 15px;
+					height: 15px;
+				}
+	
+				.podder {
+					width: 15px;
+					height: 15px;
+				}
+			}
+	
+	
+		}
+		
+	
+	}
+	
+	
+
+
+
+}
+
+
+@media screen and (min-width:320px) and (max-width:524px) {
+
+	.item:nth-child(2) {
+		display: none;
+	}
+
+	.header__items {
+		max-width: 100%; 
+	}
+}
